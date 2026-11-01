@@ -1,0 +1,12 @@
+# Unity URP Rendering Skills
+
+> Evidence-aware Unity URP render debugging, terrain preservation, static-batch geometry, baseline control and GPU lifecycle lessons for coding agents.
+
+- [Skill](skills/unity-urp-render-debugging/SKILL.md): Start here; load references selectively.
+- [Capture protocol](skills/unity-urp-render-debugging/references/capture-protocol.md): Same-reference comparisons, sorting and first-render shader state.
+- [Terrain geometry and visual quality](skills/unity-urp-render-debugging/references/terrain-and-water.md): Impossible skirts, water visibility, winding and mountain composition.
+- [GPU and scene lifecycle](skills/unity-urp-render-debugging/references/gpu-and-lifecycle.md): Actual draw-space verification, async ownership and unload orders.
+- [Evidence](evidence/case-study.md): Observed results, rejected approaches and unresolved claims.
+- [Official references](docs/api-references.md): Version-specific Unity APIs.
+- [Report checker](scripts/check_capture_report.py): Standard-library evidence checker; not an image analyser.
+- [Synthetic geometry examples](scripts/geometry_counterexamples.py): Executable counterexamples; not a scene certificate.

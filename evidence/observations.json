@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff_utc": "2026-11-01T02:55:00Z",
+  "environment": {
+    "unity": "6000.3.26f1",
+    "urp": "17.3.0",
+    "observed_backend": "Metal",
+    "target": "Quest 3 (not validated by these desktop observations)"
+  },
+  "provenance": "Curated aggregate excerpts from private author reports. Source-report hashes are audit bindings, not public reproductions. No raw media, poses, mesh buffers or local paths.",
+  "observations": [
+    {
+      "id": "E01",
+      "source_report": "cp54-v2-r76-gpu-buffer-readonly-20261031-r1-supervisor-review.json",
+      "source_report_sha256": "c79ce22584d3a55bb0cbf6c492f2f36a8ce18af76a00f5fc16b908d1cc2b5f25",
+      "recorded_utc": "2026-10-31T13:49:53.981313+00:00",
+      "classification": "author_reported_native_observation",
+      "observed": {
+        "graphics": "Metal",
+        "matched_corners": 8586,
+        "position_normal_uv_mismatch": [
+          0,
+          0,
+          0
+        ],
+        "triangles": 2862
+      },
+      "limit": "One local Metal acquisition route; not image or target-device proof."
+    },
+    {
+      "id": "E02",
+      "source_report": "cp54-v2-r82-full177-capture-20261031-r1-supervisor-review.json",
+      "source_report_sha256": "e0f526ff9d085af94794a43f32f81c1ee27ff0cd441c2b7058d61b6f5b90ba02",
+      "recorded_utc": "2026-10-31T17:28:43.341613+00:00",
+      "classification": "author_reported_native_observation",
+      "observed": {
+        "views": 16,
+        "images": 177,
+        "totals": {
+          "range_residual": 902,
+          "pilot_residual": 1,
+          "water_mask_diff": 0,
+          "water_colour_diff": 0,
+          "entrance_changed": 0,
+          "gap_columns": 39,
+          "hole_columns": 0,
+          "mf_ambiguous": 0,
+          "integrity_count": 0
+        },
+        "preinstall_off_pixels": 2,
+        "visual_status": "HOLD"
+      },
+      "limit": "Full run failed. Later synthetic/unit/diagnostic passes do not supersede this visual result."
+    },
+    {
+      "id": "E03",
+      "source_report": "cp54-v2-r85-sort-lighting-diagnostic-20261031-r1-supervisor-review.json",
+      "source_report_sha256": "5b5eb9e4b1ab6699318256f00609e660638223f6bbab44f3702154e338071e5e",
+      "recorded_utc": "2026-10-31T18:38:29.862213+00:00",
+      "classification": "author_reported_native_observation",
+      "observed": {
+        "absolute_original_baseline_comparison": [
+          {
+            "context": "spawn-N",
+            "default_range_vs_default_baseline_strict": 52,
+            "front_range_vs_front_baseline_strict": 2,
+            "front_baseline_vs_original_default_baseline_strict": 74,
+            "front_range_vs_original_default_baseline_strict": 76,
+            "front_clone_vs_original_default_baseline_strict": 74
+          },
+          {
+            "context": "north-balustrade-N",
+            "default_range_vs_default_baseline_strict": 110,
+            "front_range_vs_front_baseline_strict": 27,
+            "front_baseline_vs_original_default_baseline_strict": 69,
+            "front_range_vs_original_default_baseline_strict": 96,
+            "front_clone_vs_original_default_baseline_strict": 69
+          }
+        ],
+        "effective_depth_format": "D32_SFloat_S8_UInt",
+        "requested_depth_bits": 24
+      },
+      "limit": "Draw-order dependence supported; no unique cause or accepted camera-switch repair."
+    },
+    {
+      "id": "E04",
+      "source_report": "cp54-r82-current-gap-floor-feasibility-lead-review-2026-10-31.json",
+      "source_report_sha256": "8ed43c1f0b2d2a88ac9d998d2d8b107cda6f3d44161424e34938d06220911495",
+      "recorded_utc": "2026-10-31T18:08:21.777463+00:00",
+      "classification": "conditional_geometric_deduction_from_author_report",
+      "observed": {
+        "views": [
+          {
+            "view": "east-parapet-E",
+            "gap_rays": 69,
+            "nonpositive_vertical_direction": 14,
+            "gap_columns": 7,
+            "columns_with_nonpositive_direction_gap": 7,
+            "upward_gap_rays": 55
+          },
+          {
+            "view": "north-balustrade-NE",
+            "gap_rays": 267,
+            "nonpositive_vertical_direction": 60,
+            "gap_columns": 20,
+            "columns_with_nonpositive_direction_gap": 20,
+            "upward_gap_rays": 207
+          },
+          {
+            "view": "north-balustrade-NW",
+            "gap_rays": 78,
+            "nonpositive_vertical_direction": 36,
+            "gap_columns": 12,
+            "columns_with_nonpositive_direction_gap": 12,
+            "upward_gap_rays": 42
+          }
+        ],
+        "conditional_geometry_deduction": "For these eye heights below the immutable 5.1m floor, a ray with nonpositive vertical direction cannot hit any newly added triangle whose every vertex is at or above that floor. Therefore an above-floor skirt/curtain cannot fill those particular saved sky rays. This is a geometry infeasibility result for filling them, not a permission to change floor/box/mask or remove visible range."
+      },
+      "limit": "Deduction from saved ray aggregates under the stated floor; not a final transformed-mesh certificate."
+    },
+    {
+      "id": "E05",
+      "source_report": "cp54-v2-r86-play25-20261031-r1-supervisor-review.json",
+      "source_report_sha256": "31d0e908037e9bc530f3ba6cae430f53ea323ef28672402fa19655f0c69d2422",
+      "recorded_utc": "2026-10-31T19:16:27.834014+00:00",
+      "classification": "author_reported_native_observation",
+      "observed": {
+        "passed": 25,
+        "failed": 0,
+        "skipped": 0,
+        "fixture_observation_review": [
+          {
+            "test": "RealAtrium_V2_SceneExitWhileBuilding_NoPreTearDown_CancelsWithoutCommit_AndRecordsTheBoundaryFacts",
+            "result": "Passed",
+            "failing_severities": 0,
+            "ordinary_logs": 37,
+            "functional_cleanup_assertions_passed": true
+          },
+          {
+            "test": "RealAtrium_V2_SceneExitWhileBuilt_NoPreTearDown_ReleasesWithoutErrorOrPendingRecovery",
+            "result": "Passed",
+            "failing_severities": 0,
+            "ordinary_logs": 37,
+            "functional_cleanup_assertions_passed": true
+          }
+        ]
+      },
+      "limit": "Lifecycle and functional tests, not image acceptance."
+    },
+    {
+      "id": "E06",
+      "source_report": "cp54-v2-r89-owned-queue-paired-comparison-20261031-r1-supervisor-review.json",
+      "source_report_sha256": "8c1350a4639cc6e038430457258ac099409f125a8cb08b89f7b016d6b243f33c",
+      "recorded_utc": "2026-10-31T20:30:41.339609+00:00",
+      "classification": "author_reported_native_observation",
+      "observed": {
+        "same_reference_strict": {
+          "spawn": {
+            "control": 52,
+            "trial": 45,
+            "control_repeat": 51,
+            "trial_repeat": 45
+          },
+          "north": {
+            "control": 110,
+            "trial": 59,
+            "control_repeat": 110,
+            "trial_repeat": 59
+          }
+        },
+        "strict_residual_overlap": {
+          "spawn": {
+            "both": 45,
+            "only_control": 7,
+            "only_trial": 0
+          },
+          "north": {
+            "both": 53,
+            "only_control": 57,
+            "only_trial": 6
+          }
+        },
+        "first_baseline_repeat_changes": {
+          "spawn": 2,
+          "north": 0
+        },
+        "water_and_entrance_changes": 0
+      },
+      "limit": "Partial representative-view effect only; nonzero errors and baseline-repeat mismatch retained."
+    },
+    {
+      "id": "E07",
+      "source_report": "cp54-v2-r96-f6-first-render-inventory-20261031-r1-inventory-evidence-review.json",
+      "source_report_sha256": "28da3bf97a583b95a045b2eead79b09e545cab9da4d08c57aa33c4a263eb852a",
+      "recorded_utc": "2026-10-31T23:43:59.843712+00:00",
+      "classification": "author_reported_native_observation",
+      "observed": {
+        "strict_product_verdict": "NOT_MEASURED",
+        "observations": {
+          "P0_through_P5": "No stored-name/pass/keyword inventory deltas.",
+          "P6_after_first_B_render": {
+            "original_passes": [
+              1,
+              9
+            ],
+            "copy_passes": [
+              1,
+              9
+            ],
+            "removed": [
+              "<Unnamed Pass 0>"
+            ],
+            "added_pass_names": [
+              "ForwardLit",
+              "ShadowCaster",
+              "GBuffer",
+              "DepthOnly",
+              "DepthNormals",
+              "Meta",
+              "Universal2D",
+              "MotionVectors",
+              "XRMotionVectors"
+            ],
+            "source_and_copy_live_inventory_equal": true,
+            "stored_property_name_kinds_and_keywords": "UNCHANGED"
+          },
+          "declared_shader_properties": "UNCHANGED",
+          "other_material_values": "Names-only diagnostic does not prove full value parity. Existing runtime must keep all bitwise values/ref/queue/pass-enable guards."
+        }
+      },
+      "limit": "Names-only observation does not prove complete value parity or the internal shader-initialisation mechanism."
+    },
+    {
+      "id": "E08",
+      "source_report": "cp54-sevan-v3-key-window-and-content-proof-correction-r101-native-and-readiness-supervisor-review-2026-11-01.json",
+      "source_report_sha256": "20cfdd8aea328d765885fd2bd176ff33e6ed4349fa5ff969531e271d67ac97ca",
+      "recorded_utc": "2026-11-01T02:26:59.982332+00:00",
+      "classification": "author_reported_native_observation",
+      "observed": {
+        "functional_passed": 35,
+        "readiness_passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "water_targets": 30,
+        "real_v3_bake_attempts": 0,
+        "product_acceptance_pass": false
+      },
+      "limit": "Unbaked functional/readiness checks; no completed V3 appearance or frame-rate result."
+    },
+    {
+      "id": "E09",
+      "source_report": "cp54-sevan-v3-foreign-geometry-proof-observer-r102-native-geometry-supervisor-review-2026-11-01.json",
+      "source_report_sha256": "a42ef807fe72a65790f8ada9a0526df60cdcf8cfc48f18ec5506242313360edf",
+      "recorded_utc": "2026-11-01T02:44:21.194291+00:00",
+      "classification": "author_reported_native_observation",
+      "observed": {
+        "functional_passed": 5,
+        "readiness_passed": 1,
+        "reviewed_far_triangles": 5616,
+        "proper_central_edge_crossings": 660,
+        "resource_bake_attempts": 0,
+        "product_acceptance_pass": false
+      },
+      "limit": "Geometry intersection observed; conditional visibility correction remained a proposal at cutoff."
+    }
+  ]
+}

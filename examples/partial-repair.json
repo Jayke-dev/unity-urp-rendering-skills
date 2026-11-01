@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "scope": "representative",
+  "required_view_ids": ["synthetic-view-a", "synthetic-view-b"],
+  "thresholds": {
+    "foreground_diff": 0, "water_mask_diff": 0, "water_colour_diff": 0,
+    "protected_diff": 0, "gap_columns": 0, "installed_off_diff": 0
+  },
+  "capture_integrity": {
+    "same_reference": true, "descriptors_unchanged": true, "all_subjects_before_masks": true
+  },
+  "views": [
+    {"id": "synthetic-view-a", "control_foreground_diff": 30, "foreground_diff": 15,
+     "water_mask_diff": 0, "water_colour_diff": 0, "protected_diff": 0,
+     "gap_columns": 0, "installed_off_diff": 0, "baseline_repeat_diff": 0, "trial_repeat_diff": 0},
+    {"id": "synthetic-view-b", "control_foreground_diff": 60, "foreground_diff": 20,
+     "water_mask_diff": 0, "water_colour_diff": 0, "protected_diff": 0,
+     "gap_columns": 0, "installed_off_diff": 0, "baseline_repeat_diff": 0, "trial_repeat_diff": 0}
+  ],
+  "cleanup": "pass",
+  "visual_quality": "pending"
+}
