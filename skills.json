@@ -1,12 +1,30 @@
 {
   "schema_version": 1,
   "title": "Unity URP Rendering Skills",
-  "evidence_cutoff_utc": "2026-11-01T02:55:00Z",
-  "skills": [{
-    "name": "unity-urp-render-debugging",
-    "path": "skills/unity-urp-render-debugging/SKILL.md",
-    "description": "Debug Unity URP preservation regressions and integrate terrain with controlled captures, actual draw-space checks and bounded experiments.",
-    "keywords": ["unity", "urp", "vr", "quest", "rendering", "static-batching", "terrain", "gpu-readback", "pixel-regression"]
-  }],
-  "limitations": ["No automatic model ingestion guarantee", "No complete Unity reproduction", "No target-device performance claim"]
+  "evidence_cutoff_utc": "2026-11-01T12:55:00Z",
+  "skills": [
+    {
+      "name": "unity-urp-render-debugging",
+      "path": "skills/unity-urp-render-debugging/SKILL.md",
+      "description": "Debug Unity URP preservation regressions and integrate terrain with controlled captures, actual draw-space checks and bounded experiments.",
+      "keywords": [
+        "unity",
+        "urp",
+        "vr",
+        "quest",
+        "rendering",
+        "static-batching",
+        "terrain",
+        "gpu-readback",
+        "pixel-regression"
+      ]
+    }
+  ],
+  "limitations": [
+    "No automatic model ingestion guarantee",
+    "No complete Unity reproduction",
+    "No target-device performance claim"
+  ],
+  "initial_evidence_cutoff_utc": "2026-11-01T02:55:00Z",
+  "evidence_update": "evidence/update-2026-11-01.md"
 }

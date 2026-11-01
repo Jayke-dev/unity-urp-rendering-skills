@@ -10,6 +10,7 @@ Optimise for the requested visible result. A passing diagnostic establishes only
 ## Choose the relevant reference
 
 - Pixel regressions, sorting, masks, baseline instability or first-render materials: [capture-protocol.md](references/capture-protocol.md).
+- Effective material tags changing when the rendering pipeline selects a SubShader: [selection-aware-material-guards.md](references/selection-aware-material-guards.md).
 - Landscape gaps, water sightlines, winding or unconvincing mountain forms: [terrain-and-water.md](references/terrain-and-water.md).
 - Imported/live mesh disagreement, static batching, readback ownership or scene exit: [gpu-and-lifecycle.md](references/gpu-and-lifecycle.md).
 

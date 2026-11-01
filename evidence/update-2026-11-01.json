@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff_utc": "2026-11-01T12:55:00Z",
+  "initial_snapshot": "observations.json",
+  "provenance": "Curated author-reported aggregates with private-source hashes; no raw material/tag values, device IDs, scene media, local paths or asset buffers.",
+  "observations": [
+    {
+      "id": "E10",
+      "source": {
+        "source_report": "cp54-sevan-sky-capture-cleanup-and-material-observer-r106-native-supervisor-review-2026-11-01.json",
+        "sha256": "125df791022b6a4648ef2b0bcf0c8c0a703b4b5a68903f6d73b197cdaff528dc"
+      },
+      "recorded_utc": "2026-11-01T11:31:58.001952+00:00",
+      "classification": "author_reported_native_observation",
+      "observed": {
+        "observations": 10,
+        "observer_faults": 0,
+        "failure_reproduced": true,
+        "first_render_boundary": "06 before first B Camera.Render -> 07 after first B Camera.Render; no extra render/settle/discard",
+        "original_material_and_shader_refs_unchanged": true,
+        "owned_copy_material_and_shader_refs_unchanged": true,
+        "shader_declared_subshader_tag_vector_unchanged": true,
+        "observed_active_subshader_index_transition": [
+          2,
+          0
+        ],
+        "observed_material_pass_count_transition": [
+          1,
+          9
+        ],
+        "observed_queried_fact_keys_changed": [
+          "tag.IgnoreProjector",
+          "tag.RenderPipeline",
+          "tag.UniversalMaterialType"
+        ],
+        "original_and_owned_queried_tag_and_pass_facts_equal_after_first_render": true,
+        "pipeline_asset_type_unchanged": true,
+        "global_shader_pipeline_tag_transition": [
+          "empty",
+          "source-declared URP pipeline tag"
+        ],
+        "material_guard_refuses_at_R_show": true,
+        "qualification": "Strong evidence of render-selected SubShader query context causing the guard failure, not proof that every serialized override/property is unchanged. Added getters may perturb timing, but the same first-B-render failure was reproduced. No current gate may be ignored."
+      },
+      "limit": "Finite material selection observation; no assertion that every serialized override or property is unchanged."
+    },
+    {
+      "id": "E11",
+      "source": {
+        "source_report": "cp54-v3-r109-d1-capture1-20261101-r1-supervisor-review.json",
+        "sha256": "5c6b95104d328d939b5c958f86dd633705a3618666ffe45dafb59a2de7ec8860"
+      },
+      "recorded_utc": "2026-11-01T12:18:39.584307+00:00",
+      "classification": "author_reported_native_diagnostic",
+      "observed": {
+        "original": 10,
+        "d1": 10,
+        "faults": 0,
+        "valid_independent_editor_active_index_all": true,
+        "all_probe_effective_vectors_equal_indexed_selected_declaration": true,
+        "all_context_index_original_copy_vectors_stable_across_probe_creation": true,
+        "all_shader_refs_stable": true,
+        "first_B_render_active_transition": [
+          2,
+          0
+        ],
+        "teardown": {
+          "probes_created": 10,
+          "probes_destroy_scheduled": 10,
+          "probes_alive_after_wait": 0,
+          "frames_waited": 1
+        }
+      },
+      "original_assertion_failed_as_expected": true,
+      "limit": "Diagnostic retained original failure; not a product pass. Effective-equal overrides remain unobservable by these getters."
+    },
+    {
+      "id": "E12",
+      "classification": "author_reported_native_tests",
+      "stages": [
+        {
+          "stage": "edit",
+          "source": {
+            "source_report": "cp54-v3-r110-edit33-20261101-r1-supervisor-review.json",
+            "sha256": "e4749e0638ea3e82c3eee17ff81337872d1caad3e8eeaf7f9c2aefd8e92f3514"
+          },
+          "recorded_utc": "2026-11-01T12:32:15.818811+00:00",
+          "passed": 33,
+          "failed": 0,
+          "skipped": 0,
+          "actual_exit_code": 0
+        },
+        {
+          "stage": "play",
+          "source": {
+            "source_report": "cp54-v3-r110-play20-20261101-r1-supervisor-review.json",
+            "sha256": "8b44b97658be078f6b3262b21a58bd229f8dab6bfb647d1943407141c24be17c"
+          },
+          "recorded_utc": "2026-11-01T12:33:08.908906+00:00",
+          "passed": 20,
+          "failed": 0,
+          "skipped": 0,
+          "actual_exit_code": 0,
+          "first_render_result": {
+            "manual_capture_case_result": "Passed",
+            "material_observation_count": 10,
+            "first_B_active_transition": [
+              2,
+              0
+            ],
+            "at_R_show": {
+              "range_shown": true,
+              "range_state": "Built",
+              "old_tag_hold_present": false,
+              "counts_receipt_present": true
+            },
+            "original_material_and_shader_refs_unchanged": true
+          }
+        },
+        {
+          "stage": "regression",
+          "source": {
+            "source_report": "cp54-v3-r110-v2-regression7-20261101-r1-supervisor-review.json",
+            "sha256": "e41f2ae9888a7e17edf8a6549dad75289f9eff364513da25b5ddd7ff81d95aa8"
+          },
+          "recorded_utc": "2026-11-01T12:34:18.444262+00:00",
+          "passed": 7,
+          "failed": 0,
+          "skipped": 0,
+          "actual_exit_code": 0
+        },
+        {
+          "stage": "readiness",
+          "source": {
+            "source_report": "cp54-v3-r110-readiness-schema4-20261101-r1-supervisor-review.json",
+            "sha256": "e046472ac8f64c7984bc17f8a7bd980d1bab69c95b07065d5364c7ef10a05cbe"
+          },
+          "recorded_utc": "2026-11-01T12:35:49.664716+00:00",
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0,
+          "actual_exit_code": 0
+        }
+      ],
+      "passed_total": 61,
+      "limit": "Functional/regression/readiness evidence only; actual V3 imported resource, full pixel and visual acceptance pending."
+    },
+    {
+      "id": "E13",
+      "source": {
+        "source_report": "cp54-sevan-v3-grounded-first-offline-bake-20261101-r1-supervisor-review.json",
+        "sha256": "b60f9a817f34bbc15a776aa055ff4b5fe713bba8a4c7fdeae45641edf4496cbb"
+      },
+      "recorded_utc": "2026-11-01T12:47:16.212936+00:00",
+      "classification": "author_reported_offline_bake_and_independent_review",
+      "observed": {
+        "attempts": 1,
+        "actual_exit_code": 0,
+        "internal_determinism_passes_verified_by_reviewed_driver_and_exit0": 2,
+        "bake_gates_passed": 25,
+        "bake_gates_failed": 0,
+        "independent_binding_gates_passed": 9,
+        "independent_actual_bytes_parse_assemble_binding_gates_and_base_bit_copy": true,
+        "geometry": {
+          "vertices": 16014,
+          "vertex_budget": 16425,
+          "triangles": 28385,
+          "triangle_budget": 31104,
+          "far_triangles_exact_outside_disk": 5757,
+          "composite_water_oracle_segments": 665280,
+          "water_oracle_mismatches": 0
+        },
+        "actual_native_pixel_and_visual_acceptance": false
+      },
+      "limit": "Baked bytes and independent geometry review are not Unity import or final rendered-image acceptance. No baked assets published."
+    },
+    {
+      "id": "E14",
+      "source": {
+        "source_report": "cp54-sevan-v3-reviewed-bake-pins-and-resource-contract-r111-supervisor-quota-stop-2026-11-01.json",
+        "sha256": "e9b58f5c0d9c651091441653fed9b748f38cbb72284af1a9eded11c9b559dde3"
+      },
+      "recorded_utc": "2026-11-01T12:55:33.836230+00:00",
+      "classification": "interrupted_unreviewed_source_stage",
+      "observed": {
+        "completed_asset_hash_pins": 3,
+        "import_contract_finished": false,
+        "native_copy_performed": false,
+        "goal_complete": false,
+        "remaining_unproved": [
+          "Actual V3 Unity asset import/resource contract",
+          "Strict two-view and fixed16 pixel preservation",
+          "Final rendered visual quality"
+        ]
+      },
+      "limit": "Partial source work is preserved but not released for native use. No account logs or quota credentials included."
+    }
+  ]
+}

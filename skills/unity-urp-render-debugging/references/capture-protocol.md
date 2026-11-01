@@ -28,6 +28,8 @@ In one pinned URP run, both the original and copied material reported one unname
 
 Keep distinct guards for source/copy identity, values, textures and transforms, queue, keywords, active pass topology, and per-material pass-enable state. A source/copy-only comparison can miss both changing together. Freeze the states that the contract requires to remain invariant and allow only specifically validated topology transitions. Check actual shader source and the pinned public APIs; an enabled-state query alone is not proof that a pass exists. Do not discard the first render, warm up until green or exempt all material drift.
 
+Later work isolated a selected-SubShader tag change at the same first-render boundary and validated a V3-only correction while retaining non-tag preservation checks. Read [selection-aware-material-guards.md](selection-aware-material-guards.md) for the tested approach and its limits; pass-layout observations alone were insufficient to establish it.
+
 ## Separate verdicts
 
 `DIAGNOSTIC_VALID` means the setup and files met the experiment contract. It can coexist with `PRESERVATION_FAIL`. A Unity test process returning success is not itself a visual-quality verdict. Report diagnostic validity, repair effect, preservation and art acceptance independently.

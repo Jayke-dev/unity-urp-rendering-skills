@@ -18,7 +18,7 @@ Front/back winding changes visible coverage. Adding reverse faces only where nee
 
 ## Geometric separation and visibility are different contracts
 
-A far terrain proposal intersected the source project's entrance sky dome. The dome and terrain were normally visible in different zones, but normal correlation is not a live guarantee. The reviewed response was a proposal to prevent simultaneous drawing, not a proved geometric separation or a completed fix at this repository's cutoff.
+A far terrain proposal intersected the source project's entrance sky dome. The dome and terrain were normally visible in different zones, but normal correlation is not a live guarantee. At the initial 02:55 UTC snapshot, preventing simultaneous drawing was still a proposal. Later integration checks exercised the conditional visibility guard and manual render paths on reviewed V2 stand-in geometry; they did not establish final V3 pixel acceptance or geometric separation.
 
 If your project accepts a conditional visibility contract, bind the exact objects and scene identities, check relevant duplicates/LOD/probe conditions, and enforce the condition before every covered draw path. Include normal cameras, additional cameras, reflection/VR paths and explicit captures where applicable. A pre-camera callback can be followed by other writers: audit the actual order, limit the guarantee to verified paths and hold uncovered paths. Do not generalise this into 'ignore inactive geometry'.
 

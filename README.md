@@ -2,7 +2,7 @@
 
 Practical skills for debugging Unity URP render regressions and adding terrain to an existing VR scene without losing working visuals. Distilled from a preservation-focused memory-palace project in October–November 2026.
 
-**Status:** field-tested diagnostic lessons, partial repairs and explicit failed approaches. This is not a completed photorealistic world generator or a proven Quest optimisation package. The source project had not achieved complete landscape acceptance at the evidence cutoff (2026-11-01 02:55 UTC).
+**Status:** field-tested diagnostic lessons, partial repairs and explicit failed approaches. The [1 November update](evidence/update-2026-11-01.md) adds a validated first-render material correction and the first deterministic V3 terrain bake. Complete imported-resource, pixel and landscape visual acceptance were still pending at the latest cutoff (2026-11-01 12:55 UTC). This is not a completed world generator or a proven Quest optimisation package.
 
 ## Start here
 
@@ -21,6 +21,7 @@ Use the skill directly by pointing your agent at its `SKILL.md`. In an agent tha
 | A sorting mode makes the error nearly disappear | Compare the alternate baseline with the original baseline too | Calling a moved baseline a preservation fix |
 | Imported geometry matches but the live copy differs | Verify actual drawn slice, vertex layout, transform and batching | Assuming the prefab CPU mesh is the final draw geometry |
 | First render trips a material guard | Separate stored values, active pass topology and per-material pass-enable state | Discarding the first frame or weakening all material guards |
+| Material tags change with unchanged shader references | Compare effective tags in the current shader-selection context with an independently checked basis | Freezing selected tags forever, or accepting any declared tag value |
 | Terrain has sky gaps under its ends | Check ray direction against the allowed height domain before baking a skirt | Adding back faces that can block water |
 | Scene unload produces ownership errors | Test both possible original-object destruction orders in the actual scene | Assuming the original is already destroyed in `OnDisable` |
 | A geometry proof passes but the world still looks poor | Compare silhouette, landform scale, surface detail and depth separately | Treating a mesh budget or passing unit tests as art acceptance |

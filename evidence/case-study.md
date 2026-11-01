@@ -2,6 +2,8 @@
 
 Evidence cutoff: **2026-11-01 02:55 UTC**, before the proposed entrance-sky visibility correction was implemented. Environment configuration: Unity 6000.3.26f1, URP 17.3.0; local native observations on Metal. Quest 3 was the project target, not the backend on which these measurements prove success.
 
+This original snapshot is retained. The [dated addendum](update-2026-11-01.md) extends the evidence through 12:55 UTC, including a validated material correction and first actual V3 bake. Statements about proposals and zero bakes below describe the original cutoff, not the later status.
+
 The machine-readable [observations](observations.json) contain curated aggregate excerpts and SHA-256 hashes of their source reports. Raw reports remain private because they include project paths and private artifact references. Hashes establish bindings for the author's audit; readers cannot independently reproduce Unity behaviour from hashes alone. Synthetic examples reproduce only the stated mathematical or evidence-handling mistakes.
 
 | ID | Observation | Supported lesson | Not established |
