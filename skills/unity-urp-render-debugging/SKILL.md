@@ -13,6 +13,8 @@ Optimise for the requested visible result. A passing diagnostic establishes only
 - Effective material tags changing when the rendering pipeline selects a SubShader: [selection-aware-material-guards.md](references/selection-aware-material-guards.md).
 - Landscape gaps, water sightlines, winding or unconvincing mountain forms: [terrain-and-water.md](references/terrain-and-water.md).
 - Imported/live mesh disagreement, static batching, readback ownership or scene exit: [gpu-and-lifecycle.md](references/gpu-and-lifecycle.md).
+- Clone counterfactuals, route-dependent visibility, transition overlays or reconstructed references: [causal-experiments.md](references/causal-experiments.md).
+- Frame Debugger/replay attribution or capability-tool validation: [replay-capability-checks.md](references/replay-capability-checks.md). Its draft-review lessons are not native debugger validation.
 
 ## Establish the contract before a repair
 

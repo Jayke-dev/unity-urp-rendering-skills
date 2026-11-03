@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff_utc": "2026-11-03T13:08:00Z",
+  "reference_kind": "RECONSTRUCTED_UNACCEPTED_FOR_PRODUCT",
+  "historical_baseline_identity_satisfied": false,
+  "environment": {
+    "unity": "6000.3.26f1",
+    "urp": "17.3.0",
+    "observed_backend": "Metal"
+  },
+  "provenance": "Curated author-report aggregates and private-source hashes. No raw images, buffers, poses, device IDs, account data or draft helper code.",
+  "observations": [
+    {
+      "id": "E15",
+      "source": {
+        "report": "cp54-v3-import-contract-and-candidate-stability-review-2026-11-03.json",
+        "sha256": "cd1ccefee44e26e4b573a71c1e0dadc141bf59e48c813fe11619a79b70a29cf0",
+        "recorded_utc": "2026-11-03T10:44:44.468917+00:00"
+      },
+      "classification": "author_reported_native_import_checks",
+      "observed": {
+        "actual_passed": 10,
+        "failed": 0,
+        "skipped": 0,
+        "first_actual_completed_R111_resource_contract": true,
+        "candidate898_stable_on_repeat": true,
+        "old898_identity_complete": false,
+        "old_missing11_serialized_files_still_not_recovered": true
+      },
+      "limit": "Reconstructed reference only; functional import checks do not establish old baseline identity or pixel acceptance."
+    },
+    {
+      "id": "E16",
+      "source": {
+        "report": "cp54-v3-r115-transition-diagnostic-native-review-2026-11-03.json",
+        "sha256": "7ca362250d5df62223c807d5f71d1d0757829d093317bad658419dd375613a4f",
+        "recorded_utc": "2026-11-03T11:38:35.352319+00:00"
+      },
+      "classification": "author_reported_native_diagnostic",
+      "observed": {
+        "tests_passed": 1,
+        "pngs": 16,
+        "diagnostic_faults": 0,
+        "cleanup_issues": 0,
+        "north_guard_cause": "One non-LOD EntranceBasins target is bound as inactive (enabled=false,active=true) at Atrium. It becomes drawing in Approach, inside valid domain; horizon and certified sky remain not drawing. Its category alone explains HideRule rejection. All entries matched uniquely.",
+        "large_old_texture_failure_not_reproduced_in_changed_sequence": true,
+        "post_teardown_control_has_active_comfort_vignette": true,
+        "product_pass": false
+      },
+      "limit": "Extra diagnostic renders changed the sequence; invalid comfort-overlay control cannot establish persistence or corruption. Earlier failures remain."
+    },
+    {
+      "id": "E17",
+      "sources": [
+        {
+          "report": "cp54-v3-r116-prebake-inputs-supervisor-review-2026-11-03.json",
+          "sha256": "46d6e4bd570209b9e125bcf5298d64b09f1159fe91bb4c0dd4d05cc94d4a9636",
+          "recorded_utc": "2026-11-03T11:49:01.273951+00:00"
+        },
+        {
+          "report": "cp54-sevan-v3-basin-covered-offline-bake-20261103-r1-supervisor-review.json",
+          "sha256": "716147ba2098d590eb3e4d766416088ed4439d517d45e85b35ed33ca62b78420",
+          "recorded_utc": "2026-11-03T11:51:30.858941+00:00"
+        }
+      ],
+      "classification": "author_reported_native_readiness_and_offline_bake",
+      "observed": {
+        "water_targets": 30,
+        "relevant": 29,
+        "inactive_exemptions": 0,
+        "horizon_exemptions": 1,
+        "readiness_holds": 0,
+        "bake_gates_passed": 25,
+        "bake_gates_failed": 0,
+        "independent_binding_gates_passed": 9,
+        "internal_determinism_passes": 2,
+        "geometry": {
+          "vertices": 16014,
+          "vertex_budget": 16425,
+          "triangles": 28385,
+          "triangle_budget": 31104,
+          "far_triangles_exact_outside_disk": 5757,
+          "composite_water_oracle_gate_passed": true
+        }
+      },
+      "limit": "Stronger binding, unchanged geometry/texture output and new provenance do not establish raster or visual acceptance."
+    },
+    {
+      "id": "E18",
+      "source": {
+        "report": "cp54-v3-r117-import-and-s3-native-review-2026-11-03.json",
+        "sha256": "971b2708450851805583e980462c8890d41b1ec2004291e71bf3ab71b41ec5b5",
+        "recorded_utc": "2026-11-03T12:14:36.593436+00:00"
+      },
+      "classification": "author_reported_native_import_and_failed_render_pilot",
+      "observed": {
+        "import_passed": 2,
+        "s3_exit_code": 2,
+        "actual_images": 20,
+        "preinstall_off_difference": 2,
+        "views": [
+          {
+            "view": "spawn-N",
+            "range_residual": 49,
+            "water_mask_diff": 0,
+            "water_colour_diff": 0,
+            "entrance_changed": 0,
+            "gap_columns": 0,
+            "hole_columns": 0
+          },
+          {
+            "view": "north-balustrade-NE",
+            "range_residual": 70,
+            "water_mask_diff": 0,
+            "water_colour_diff": 0,
+            "entrance_changed": 0,
+            "gap_columns": 0,
+            "hole_columns": 0
+          }
+        ],
+        "north_visibility_correction_verified": true,
+        "hidden_failures": 0,
+        "cleanup_remaining": 0,
+        "full16_held": true,
+        "reference_unaccepted": true
+      },
+      "limit": "Visibility fixed in two tested views;49/70 foreground and2OFF failures remain. Subjective visual quality still held."
+    },
+    {
+      "id": "E19",
+      "source": {
+        "report": "cp54-v3-r119-clone-fidelity-queue-native-review-2026-11-03.json",
+        "sha256": "4bd4b6ac99b99804789481e890d2d70055c0baed4e60fb07b7313625b165ced6",
+        "recorded_utc": "2026-11-03T12:43:17.406963+00:00"
+      },
+      "classification": "author_reported_native_clone_diagnostic",
+      "observed": {
+        "actual_images": 54,
+        "fidelity_rows": [
+          {
+            "view": "spawn-N",
+            "matched_pairs": 16,
+            "pre_override_flags_equal": 15,
+            "pre_override_reasons": {
+              "world bounds (probe sampling centre)": 1
+            },
+            "post_override_flags_equal": 16,
+            "post_override_field_mismatches": {
+              "bounds_bits": 0,
+              "enabled_at_copy": 0,
+              "force_rendering_off": 0,
+              "layer": 0,
+              "light_probe_usage": 0,
+              "material_refs": 0,
+              "matrix_bits": 0,
+              "mesh_ref": 0,
+              "motion_vectors": 0,
+              "occlusion_when_dynamic": 0,
+              "probe_anchor": 0,
+              "property_block": 0,
+              "receive_shadows": 0,
+              "reflection_probe_usage": 0,
+              "renderer_priority": 0,
+              "rendering_layer_mask": 0,
+              "shadow_casting": 0,
+              "sorting_layer": 0,
+              "sorting_order": 0,
+              "static_shadow_caster": 0
+            },
+            "source_owner_materials_unchanged": {
+              "owner_materials_changed": 0,
+              "owner_reference_sets_changed": 0,
+              "mountains_far_unchanged": true
+            }
+          },
+          {
+            "view": "north-balustrade-NE",
+            "matched_pairs": 16,
+            "pre_override_flags_equal": 15,
+            "pre_override_reasons": {
+              "world bounds (probe sampling centre)": 1
+            },
+            "post_override_flags_equal": 16,
+            "post_override_field_mismatches": {
+              "bounds_bits": 0,
+              "enabled_at_copy": 0,
+              "force_rendering_off": 0,
+              "layer": 0,
+              "light_probe_usage": 0,
+              "material_refs": 0,
+              "matrix_bits": 0,
+              "mesh_ref": 0,
+              "motion_vectors": 0,
+              "occlusion_when_dynamic": 0,
+              "probe_anchor": 0,
+              "property_block": 0,
+              "receive_shadows": 0,
+              "reflection_probe_usage": 0,
+              "renderer_priority": 0,
+              "rendering_layer_mask": 0,
+              "shadow_casting": 0,
+              "sorting_layer": 0,
+              "sorting_order": 0,
+              "static_shadow_caster": 0
+            },
+            "source_owner_materials_unchanged": {
+              "owner_materials_changed": 0,
+              "owner_reference_sets_changed": 0,
+              "mountains_far_unchanged": true
+            }
+          }
+        ],
+        "residual_set_overlap": {
+          "spawn-N": {
+            "real_and_sector_overlap": 3,
+            "sector_only": 1,
+            "real_only": 47,
+            "overlap_same_RGB": 3,
+            "real_and_source_queue_overlap": 2,
+            "sectors_source_queue_overlap": 2,
+            "real_residual_delta_bands": [
+              47,
+              3,
+              0,
+              0
+            ]
+          },
+          "north-balustrade-NE": {
+            "real_and_sector_overlap": 29,
+            "sector_only": 0,
+            "real_only": 41,
+            "overlap_same_RGB": 29,
+            "real_and_source_queue_overlap": 41,
+            "sectors_source_queue_overlap": 29,
+            "real_residual_delta_bands": [
+              45,
+              3,
+              20,
+              2
+            ]
+          }
+        },
+        "diagnostic_faults": 0,
+        "cleanup_faults": 0,
+        "preinstall_off_pixels": 2,
+        "conclusion": "Clone fidelity16/16 verified AFTER bounds override; prior15/16 was exactly the clone base bounds observation order. Source queue2000 controls worsen sector residuals vs2500: spawn4->11first/13repeat; north29->66. Base-only0outside at both queues. Does not justify queue change. North29sector residuals are all within actual70 and have exactly the same RGB;41real-only. Spawn3sector residuals coincide/sameRGB with actual50,47real-only plus1sector-only. Stable B controls and allrepeats except queue2000spawnsectors2pixels/intensity1. Retained original occlusion still qualifies replacement attribution."
+      },
+      "limit": "Exact means measured final clone fields only. Retained original alters occlusion; queue and residual comparisons do not identify a unique writer or a portable queue setting."
+    },
+    {
+      "id": "E20",
+      "sources": [
+        {
+          "report": "cp54-v3-r120-gpu-attribution-plan-supervisor-review-2026-11-03.json",
+          "sha256": "2890c77715afb0c2e7fbf35889cf3e04e3a25405c7db651931e9da98abb0565e",
+          "recorded_utc": "2026-11-03T12:53:35.147752+00:00"
+        },
+        {
+          "report": "cp54-v3-r121-capability-draft-supervisor-review-2026-11-03.json",
+          "sha256": "5c44b9ddd7a9cbfa6bf320b11a6347a4ba1703a2f33219ae115068a52b5f1ab2",
+          "recorded_utc": "2026-11-03T13:07:37.205526+00:00"
+        }
+      ],
+      "classification": "static_review_and_compiled_counterexamples_not_unity_execution",
+      "observed": {
+        "native_run_performed": false,
+        "draft_applied": false,
+        "counterexample_findings": [
+          "Enable-then-throw can leave debugger-like state on when ownership is recorded only after success.",
+          "Required anchor transitions absent while unrelated endpoint hashes differ can yield false capability success.",
+          "Null-object batched draw can be misclassified as non-draw.",
+          "Partial event-table fingerprints omit claimed invariant fields."
+        ],
+        "review_plan_limitations": [
+          "Same target dimensions do not prove camera/attachment identity.",
+          "Last resolved colour transition does not establish sample writer.",
+          "Replay endpoints and positive controls need actual verification."
+        ]
+      },
+      "limit": "These are reproducible code-review findings against a draft, not verified native Frame Debugger behaviour. Ongoing correction excluded."
+    }
+  ]
+}

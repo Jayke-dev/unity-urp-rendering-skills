@@ -20,6 +20,7 @@ def load(name):
 
 capture = load("check_capture_report")
 geometry = load("geometry_counterexamples")
+replay = load("replay_evidence_counterexamples")
 
 
 class CaptureTests(unittest.TestCase):
@@ -132,3 +133,34 @@ class GeometryTests(unittest.TestCase):
         for sides in (0, 2, 3.5, True):
             with self.assertRaises(ValueError):
                 geometry.polygon_inradius(10, sides)
+
+
+class ReplayEvidenceTests(unittest.TestCase):
+    def test_same_colour_write_is_invisible_to_last_transition(self):
+        result = replay.colour_transition_vs_writer("black", [("a", "red"), ("b", "red")])
+        self.assertEqual(result["last_colour_transition"], "a")
+        self.assertEqual(result["last_writer"], "b")
+
+    def test_outside_anchor_change_is_not_a_positive_control(self):
+        before, after = ["red", "black"], ["red", "white"]
+        self.assertNotEqual(before, after)
+        self.assertEqual(replay.anchors_changed(before, after, [0]), 0)
+        self.assertEqual(replay.anchors_changed(before, after, [1]), 1)
+
+    def test_partial_enable_failure_cleans_up_and_preserves_exception(self):
+        state = replay.PartialEnable()
+        with self.assertRaisesRegex(RuntimeError, "side effect"):
+            replay.enable_attempt_with_cleanup(state)
+        self.assertFalse(state.enabled)
+
+    def test_existing_ownership_is_not_claimed_or_disabled(self):
+        state = replay.PartialEnable()
+        state.enabled = True
+        with self.assertRaises(ValueError):
+            replay.enable_attempt_with_cleanup(state)
+        self.assertTrue(state.enabled)
+
+    def test_empty_or_invalid_anchors_are_not_accepted(self):
+        for anchors in ([], [-1], [1], [True]):
+            with self.assertRaises(ValueError):
+                replay.anchors_changed(["a"], ["b"], anchors)

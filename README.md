@@ -2,7 +2,7 @@
 
 Practical skills for debugging Unity URP render regressions and adding terrain to an existing VR scene without losing working visuals. Distilled from a preservation-focused memory-palace project in October–November 2026.
 
-**Status:** field-tested diagnostic lessons, partial repairs and explicit failed approaches. The [1 November update](evidence/update-2026-11-01.md) adds a validated first-render material correction and the first deterministic V3 terrain bake. Complete imported-resource, pixel and landscape visual acceptance were still pending at the latest cutoff (2026-11-01 12:55 UTC). This is not a completed world generator or a proven Quest optimisation package.
+**Status:** field-tested diagnostic lessons, partial repairs and explicit failed approaches. The [3 November update](evidence/update-2026-11-03.md) adds successful resource-import checks, a route-dependent water correction, controlled clone experiments and static review of an unexecuted Frame Debugger draft. Two-view foreground failures remain (49/70 pixels), and the reconstructed reference is not the accepted historical baseline. Latest evidence cutoff: 2026-11-03 13:08 UTC. This is not a completed world generator or a proven Quest optimisation package.
 
 ## Start here
 
@@ -26,6 +26,9 @@ Use the skill directly by pointing your agent at its `SKILL.md`. In an agent tha
 | Scene unload produces ownership errors | Test both possible original-object destruction orders in the actual scene | Assuming the original is already destroyed in `OnDisable` |
 | A geometry proof passes but the world still looks poor | Compare silhouette, landform scale, surface detail and depth separately | Treating a mesh budget or passing unit tests as art acceptance |
 | Diagnostics keep growing | Name the implementation decision each diagnostic will change | More tests without a concrete product intervention |
+| An inactive water target later hides terrain | Validate co-visibility over route/zone states and refresh the proof inputs | Treating bind-time inactivity as permanent irrelevance |
+| A clone experiment seems to isolate a cause | Compare final bounds and render flags, then account for retained original occlusion | Subtracting clone error counts from replacement counts |
+| Frame Debugger replay shows a pixel change | Verify capture, target and replay endpoint identity; report a colour transition | Calling the last colour change the actual GPU sample writer |
 
 ## What was actually learned?
 
@@ -40,6 +43,7 @@ Python 3.10+; standard library only:
 ```sh
 python3 -m unittest discover -s tests -v
 python3 scripts/geometry_counterexamples.py
+python3 scripts/replay_evidence_counterexamples.py
 python3 scripts/check_capture_report.py examples/partial-repair.json
 ```
 
@@ -49,4 +53,4 @@ The last command deliberately exits **1**: the example reports a measurable part
 
 MIT licensed. The documents and synthetic Python helpers are newly written for this repository. No private scene, meshes, screenshots, asset packages, raw readbacks, logs, device identifiers or account material are included. Public evidence is a curated author report; source-report hashes aid traceability but do not substitute for an independently runnable Unity reproduction.
 
-For a new lesson, provide a minimal reproduction where possible, the exact environment, controlled comparison, result and limitation. Separate observations, deductions, proposed repairs and validated product outcomes. Do not describe the source project's pending sky-visibility proposal as an implemented or proven fix.
+For a new lesson, provide a minimal reproduction where possible, the exact environment, controlled comparison, result and limitation. Separate observations, deductions, proposed repairs and validated product outcomes. Preserve chronology: the initial sky-visibility proposal later received bounded integration checks, while the latest Frame Debugger capability draft remained unexecuted at cutoff. Neither establishes complete landscape acceptance.
