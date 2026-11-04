@@ -14,6 +14,7 @@ Optimise for the requested visible result. A passing diagnostic establishes only
 - Landscape gaps, water sightlines, winding or unconvincing mountain forms: [terrain-and-water.md](references/terrain-and-water.md).
 - Imported/live mesh disagreement, static batching, readback ownership or scene exit: [gpu-and-lifecycle.md](references/gpu-and-lifecycle.md).
 - Clone counterfactuals, route-dependent visibility, transition overlays or reconstructed references: [causal-experiments.md](references/causal-experiments.md).
+- Repeated replacement failures, hidden additive terrain, or surface-overlay proposals: [preservation-first-design.md](references/preservation-first-design.md).
 - Frame Debugger/replay attribution or capability-tool validation: [replay-capability-checks.md](references/replay-capability-checks.md). Its draft-review lessons are not native debugger validation.
 
 ## Establish the contract before a repair
@@ -41,6 +42,8 @@ If the evidence supports a product repair, implement it and compare the visible 
 - A geometry overlap is not automatically a visible collision; a visibility exemption still needs a live, render-path-specific justification.
 - A hash of unchanged references or counts does not prove unchanged buffer contents.
 - A copied material or changed render queue is a hypothesis, not a portable fix.
+- Hiding new geometry while leaving the original retired does not recreate the baseline. An additive architecture is an alternative to test, not proof that retirement caused the old failure.
+- Zero protected-pixel differences with mostly hidden new terrain do not satisfy a visible landscape brief. Surface detail and silhouette need separate judgments.
 
 ## Finish with product evidence
 

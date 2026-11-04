@@ -33,3 +33,10 @@ Changing the clone queue from the experimental 2500 to the source's 2000 worsene
 ## Keep reference provenance visible
 
 A reconstructed scene that passes import and functional checks is still a different reference if historical byte identity is missing. Preserve the old ledger and label the new reference explicitly. Report newly visible geometry, unchanged water checks and current failures separately. Do not present old-versus-new totals from different references as a continuous improvement curve.
+
+
+## Joint controls still need the missing original
+
+Separate base-off and sector-off arms do not exclude joint or redundant effects. A bounded joint-off arm can test that gap, but if the original renderer remains retired it is not the original baseline. In the source case, jointly hiding both owned groups recovered none of the known 70 pixels: 41 stayed at the candidate colour and 29 changed elsewhere in colour space. Before/after candidate controls were exact. The outcome was mixed, not a unique retirement cause or proof that no owned draw had written a sample.
+
+The diagnostic branch then ended in favour of a concrete architecture trial. Require another diagnostic to change an implementation decision; if every possible result leads to the same prototype, consider whether the prototype itself is the more useful next experiment. See [preservation-first design](preservation-first-design.md) for the tested alternative and its visual limits.

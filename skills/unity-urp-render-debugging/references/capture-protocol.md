@@ -33,3 +33,12 @@ Later work isolated a selected-SubShader tag change at the same first-render bou
 ## Separate verdicts
 
 `DIAGNOSTIC_VALID` means the setup and files met the experiment contract. It can coexist with `PRESERVATION_FAIL`. A Unity test process returning success is not itself a visual-quality verdict. Report diagnostic validity, repair effect, preservation and art acceptance independently.
+
+
+## Separate first-render variation from installation
+
+When B versus O fails, retain B and add a never-installed repeat B1 before installation, then capture O in the same controlled flow. Report all three comparisons: B–B1, B1–O and B–O. Do not replace the official first baseline with the repeat.
+
+One actual control reported B–B1 = 2 pixels (at most 1/255 channel change) and B1–O = 0. Installation added no observed difference in that sequence. The original B–O assertion still failed. This supports a first-render/repeat explanation for that observation; it neither identifies an engine mechanism nor permits automatic warm-up, tolerance changes or noise subtraction.
+
+Validate frame presence, dimensions and complete array lengths before saving or comparing pixels. Missing/short evidence is INVALID, never a zero count or comparison of a convenient prefix. Compute the three counts from the same complete frames. Contradictory summary counts are invalid: if B1 equals O exactly, their differences from B must be equal. A zero installation delta alongside a recorded first-frame failure is a narrower observation than an all-contract pass.

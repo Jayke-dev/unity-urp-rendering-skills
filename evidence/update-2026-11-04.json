@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff_utc": "2026-11-04T05:13:00Z",
+  "scope": "Completed R131/R133/R134/R135 native supervisor receipts, R137 source review and R138 worker source report only; subsequent review/native work excluded.",
+  "provenance": "Curated author-reported aggregates; private source reports are identified by filename and SHA-256, not distributed. Hashes support traceability, not independent reproduction.",
+  "reference": "Explicitly unaccepted reconstructed entrance reference; historical reference equivalence unproved.",
+  "environment": {
+    "unity": "6000.3.26f1",
+    "urp": "17.3.0",
+    "backend": "desktop Metal",
+    "quest_validation": false
+  },
+  "observations": [
+    {
+      "id": "E21",
+      "source": {
+        "report": "cp54-r131-retired-empty-native-supervisor-review-2026-11-03.json",
+        "sha256": "34ef6286d7596b21cbe2b4af43d0d62bd2d64c27945bdc28d4fa164fb4bdd2b8",
+        "recorded_utc": "2026-11-03T17:42:57.246462+00:00"
+      },
+      "classification": "author_reported_native_counterfactual",
+      "observed": {
+        "cohort": 70,
+        "both_owned_draw_groups_hidden": true,
+        "original_still_retired": true,
+        "recovered_to_reference": 0,
+        "unchanged_candidate_colour": 41,
+        "other_colour": 29,
+        "outside_cohort_foreground_changed": 187,
+        "initial_and_final_candidate_controls_exact": true,
+        "outcome": "MIXED",
+        "diagnostic_faults": 0,
+        "full_original_capture_and_cleanup_completed": true,
+        "original_strict_failures": [
+          49,
+          70,
+          2
+        ]
+      },
+      "limit": "Joint hiding does not restore the original or isolate a unique writer. Retirement/installation context remains a hypothesis. Diagnostic branch ended without a product fix."
+    },
+    {
+      "id": "E22",
+      "source": {
+        "report": "cp54-r133-additive-native-render-supervisor-review-2026-11-03.json",
+        "sha256": "e487d3c36f51ad700b3810a57301aa39e26a790708f94ba20f45aed310ad9c28",
+        "recorded_utc": "2026-11-03T18:33:01.807269+00:00"
+      },
+      "classification": "author_reported_native_additive_prototype",
+      "observed": {
+        "original_mountains_preserved_drawing": true,
+        "live_geometry_binding": "PASS",
+        "lifecycle_with_injected_allocation_failures": "PASS",
+        "images": 20,
+        "views": [
+          {
+            "view": "spawn-N",
+            "foreground_residual": 0,
+            "water_mask_diff": 0,
+            "water_colour_diff": 0,
+            "entrance_changed": 0,
+            "gap_columns": 0,
+            "hole_columns": 0,
+            "range_land_pixels": 428
+          },
+          {
+            "view": "north-balustrade-NE",
+            "foreground_residual": 0,
+            "water_mask_diff": 0,
+            "water_colour_diff": 0,
+            "entrance_changed": 0,
+            "gap_columns": 0,
+            "hole_columns": 0,
+            "range_land_pixels": 9574
+          }
+        ],
+        "firstframe_to_installed_off_pixels": 2,
+        "nunit_pass": false,
+        "owned_refs_remaining": 0,
+        "visual_verdict": "REJECT_LOOK",
+        "visual_finding": "Original flat tan faces dominate; distant additive terrain mostly hidden."
+      },
+      "limit": "Two-view ON preservation on an unaccepted reconstructed reference, not full contract, historical-baseline, artistic or headset acceptance. The two first-frame differences and suite failure remain."
+    },
+    {
+      "id": "E23",
+      "source": {
+        "report": "cp54-r134-native-audit-and-noinstall-control-supervisor-review-2026-11-03.json",
+        "sha256": "2814f1560ea1f61132572c465968e46460d84008a77e36bcfceb87d70f37480e",
+        "recorded_utc": "2026-11-03T18:54:58.292732+00:00"
+      },
+      "classification": "author_reported_native_no_install_repeat_control",
+      "observed": {
+        "same_frame": true,
+        "first_to_no_install_repeat_pixels": 2,
+        "first_to_no_install_repeat_max_channel_delta": 1,
+        "no_install_repeat_to_installed_off_pixels": 0,
+        "independent_saved_png_comparison": "MATCH",
+        "on_foreground_residuals": [
+          0,
+          0
+        ],
+        "water_entrance_gaps_holes": 0,
+        "original_firstframe_assert": "FAILED_UNCHANGED",
+        "nunit_pass": false,
+        "callback_audit": "PASS",
+        "editmode_passed": 157,
+        "editmode_failed": 3,
+        "editmode_failure_class": "previously_recorded_phase_failures_only"
+      },
+      "limit": "In this exact-flow control the two 1/255 differences precede installation and installation adds zero. Supports capture first-render/repeat behaviour for this observation; no unique engine cause, automatic warm-up allowance, acceptance change or universal install-safety claim."
+    },
+    {
+      "id": "E24",
+      "source": {
+        "report": "cp54-r135-composed-native-render-supervisor-review-2026-11-03.json",
+        "sha256": "f5ba35becff5d85920f1086608b6ba537928c764272ef40b02464d620f1f302d",
+        "recorded_utc": "2026-11-03T19:16:37.445352+00:00"
+      },
+      "classification": "author_reported_native_rejected_height_composition",
+      "observed": {
+        "lifted_samples": 2365,
+        "mean_lift_metres": 55.5,
+        "max_lift_metres": 103.38,
+        "height_cap_metres": 180,
+        "geometry_and_lifecycle": "PASS",
+        "foreground_residuals": [
+          1,
+          0
+        ],
+        "water_mask_colour_and_entrance_differences": 0,
+        "firstframe_to_installed_off_pixels": 2,
+        "visual_verdict": "REJECT_LOOK",
+        "visual_finding": "More visible far band remains broad pale blank terrain behind dominant flat faces.",
+        "height_tuning_branch": "STOPPED",
+        "nunit_pass": false
+      },
+      "limit": "More geometry visibility is not surface detail or visual acceptance. Height compliance did not prevent a one-pixel foreground regression; candidate rejected."
+    },
+    {
+      "id": "E25",
+      "classification": "supervisor_review_and_pure_checks_not_native_overlay_validation",
+      "observed": {
+        "comparison_validation": "Shared comparator validates all complete frame arrays before pixel access; incomplete evidence is INVALID.",
+        "independent_pure_tests_passed": 9,
+        "draft_compile": "stub-assisted, zero errors",
+        "original_capture_contract": "UNCHANGED",
+        "alternate_off_interpretation": "UNRELEASED",
+        "coating_claims": "Full-slice hashes do not prove raster coincidence; co-depth, per-sample, stereo and performance claims remain unknown.",
+        "native_runs": 0
+      },
+      "limit": "Draft comparison corrections and proof review only; no acceptance-rule change, coverage certificate or validated product overlay.",
+      "sources": [
+        {
+          "report": "cp54-r137-supervisor-source-review-2026-11-04.json",
+          "sha256": "bd7afeeef583cbe2a1b188f00e1b8a7bddd3cecd76d82e4d7e1c7ad4276f3065",
+          "recorded_utc": "2026-11-04T04:37:03.172033+00:00"
+        },
+        {
+          "report": "cp54-sevan-coating-proof-and-capture-boundary-review-r137-proposal.json",
+          "sha256": "255cd09a1593545dd1f6928419bda15c8609a45bbd59b2e6d5f10a411416d1fe"
+        }
+      ]
+    },
+    {
+      "id": "E26",
+      "source": {
+        "report": "cp54-sevan-coating-ci1-test-source-r138-report.json",
+        "sha256": "47b77c25d8971f59d188e01cb8dcc6399cdc07e2cd6cb5a60446e3d81e0f98f4",
+        "recorded_utc": null
+      },
+      "classification": "worker_reported_source_only_unreviewed_at_cutoff",
+      "observed": {
+        "native_runs": 0,
+        "shader_imported_or_compiled_in_unity": false,
+        "full_asmdef_compile": false,
+        "source_artifacts": "Temporary coverage-smoke helper and constant-key overlay shader drafts",
+        "worker_reported_pure_checks_passed": 13,
+        "worker_reported_mutants_killed": 24,
+        "lead_review": "PENDING_AT_CUTOFF"
+      },
+      "limit": "Not independently reviewed or rendered at cutoff. Not a coating recipe or observed GPU result. A future resolved-RGB match would cover only the tested views/backend, not per-sample MSAA identity, global leak-freedom, water reflections, art or device performance."
+    }
+  ]
+}
