@@ -2,7 +2,7 @@
 
 Practical skills for debugging Unity URP render regressions and adding terrain to an existing VR scene without losing working visuals. Distilled from a preservation-focused memory-palace project in October–November 2026.
 
-**Status:** field-tested diagnostics, bounded preservation results and explicit failed approaches. The [4 November update](evidence/update-2026-11-04.md) adds an additive prototype with zero ON foreground/water/Entrance differences in its own two-view captures, a control reproducing the two-pixel discrepancy before installation, and a rejected height-composition trial. Visual acceptance remains unresolved; the reconstructed reference is unaccepted. The surface-overlay test is source-only at cutoff. Latest evidence cutoff: 2026-11-04 05:13 UTC. This is not a completed world generator or a proven Quest optimisation package.
+**Status:** field-tested diagnostics, bounded preservation results and explicit failed approaches. The [4 November afternoon update](evidence/update-2026-11-04-afternoon.md) adds actual rejection of the equal-depth overlay at 4× MSAA, a successful new-surface coordinate adapter and witnessed dependency build, and 72 actual Unity preview images. Preview validation remains INVALID; preservation gates were not evaluated and the look is unfinished. The reconstructed reference remains unaccepted. Latest evidence cutoff: 2026-11-04 16:00 UTC. This is not a completed world generator or a proven Quest optimisation package.
 
 ## Start here
 
@@ -28,6 +28,10 @@ Use the skill directly by pointing your agent at its `SKILL.md`. In an agent tha
 | New distant terrain passes preservation but is mostly hidden | Judge visibility and surface detail separately; test the architecture against the visual brief | Calling hidden terrain a visual success |
 | OFF differs from the first image | Add a never-installed repeat and retain all three comparisons | Silently replacing the official first frame |
 | A surface overlay uses identical source positions | Verify actual slice/selection, uploaded bytes and finite GPU coverage | Calling hashes or resolved RGB a per-sample identity proof |
+| Equal import settings still produce unequal frames | Measure the actual matrices; adapt only permitted new data | Rounding protected original frames equal |
+| A copied scene unexpectedly depends on the original | Reconcile a bounded direct-edge witness with recursive closures | Deleting roots merely because they fail a set comparison |
+| Scene loading exhausts a frame budget | Measure wall time and start capture timing after completion | Treating frame count as elapsed seconds |
+| Strict capture aborts before art can be inspected | Use a separately reviewed preview with no acceptance authority | Reporting collected pictures as preservation PASS |
 | Diagnostics keep growing | Name the implementation decision each diagnostic will change | More tests without a concrete product intervention |
 | An inactive water target later hides terrain | Validate co-visibility over route/zone states and refresh the proof inputs | Treating bind-time inactivity as permanent irrelevance |
 | A clone experiment seems to isolate a cause | Compare final bounds and render flags, then account for retained original occlusion | Subtracting clone error counts from replacement counts |
@@ -56,4 +60,4 @@ The last command deliberately exits **1**: the example reports a measurable part
 
 MIT licensed. The documents and synthetic Python helpers are newly written for this repository. No private scene, meshes, screenshots, asset packages, raw readbacks, logs, device identifiers or account material are included. Public evidence is a curated author report; source-report hashes aid traceability but do not substitute for an independently runnable Unity reproduction.
 
-For a new lesson, provide a minimal reproduction where possible, the exact environment, controlled comparison, result and limitation. Separate observations, deductions, proposed repairs and validated product outcomes. Preserve chronology: the initial sky-visibility proposal later received bounded integration checks, while the 3 November Frame Debugger capability draft remained unexecuted at that snapshot. The 4 November surface-overlay draft is also unrendered at its cutoff. None establishes complete landscape acceptance.
+For a new lesson, provide a minimal reproduction where possible, the exact environment, controlled comparison, result and limitation. Separate observations, deductions, proposed repairs and validated product outcomes. Preserve chronology: the initial sky-visibility proposal later received bounded integration checks, while the 3 November Frame Debugger capability draft remained unexecuted at that snapshot. The early 4 November overlay draft was unrendered at its cutoff; the afternoon update records its actual rejection. Later preview completion is art-observation evidence, not preservation acceptance. None establishes complete landscape acceptance.

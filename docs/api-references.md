@@ -14,3 +14,8 @@ Checked 2026-11-01. These explain APIs, not the private project's measured resul
 - [Renderer.bounds (6000.3)](https://docs.unity.com/en-us/engine/6000.3/script-reference/unityengine/renderer/bounds): world-space bounds and custom overrides. Clone comparisons must inspect their final state; do not assume equal mesh references imply equal bounds.
 
 No Unity documentation or package source is vendored here. The application-specific shader transition, effective depth format, numerical counts and cleanup observations come from the [case study](../evidence/case-study.md); they are not asserted as universal API behaviour.
+
+
+Additional reference checked 2026-11-04:
+
+- [AssetDatabase.GetDependencies (6000.3)](https://docs.unity.com/en-us/engine/6000.3/script-reference/unityeditor/assetdatabase/getdependencies): distinguishes direct and recursive asset references; recursive results contain the requested root. Root inclusion alone is not a positive-length cycle witness. The source case's actual graph evidence is in the afternoon addendum, not established by the API documentation.

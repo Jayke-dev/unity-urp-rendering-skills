@@ -42,3 +42,14 @@ When B versus O fails, retain B and add a never-installed repeat B1 before insta
 One actual control reported B–B1 = 2 pixels (at most 1/255 channel change) and B1–O = 0. Installation added no observed difference in that sequence. The original B–O assertion still failed. This supports a first-render/repeat explanation for that observation; it neither identifies an engine mechanism nor permits automatic warm-up, tolerance changes or noise subtraction.
 
 Validate frame presence, dimensions and complete array lengths before saving or comparing pixels. Missing/short evidence is INVALID, never a zero count or comparison of a convenient prefix. Compute the three counts from the same complete frames. Contradictory summary counts are invalid: if B1 equals O exactly, their differences from B must be equal. A zero installation delta alongside a recorded first-frame failure is a narrower observation than an all-contract pass.
+
+
+## Separate preview collection from acceptance
+
+A strict harness may stop on reference instability before reaching the candidate. When the user still needs images to judge art, a separately scoped observation mode can collect them while preserving the strict failure. It must not inherit the strict test's PASS authority.
+
+In the source case, an explicitly reviewed observation mode completed 72 pictures but retained 52 INVALID entries. It recorded zero acceptance-gate evaluations: preservation was NOT_EVALUATED, not zero failures or PASS. All image comparisons and raw failure entries remained available; loading, missing evidence, material, ownership and cleanup faults still stopped collection. The strict mode stayed unchanged.
+
+Track collection completion, planned/actual renders, valid/invalid comparison arms, acceptance evaluated/not-evaluated and cleanup independently. One early helper said schedule-complete after 6 of 24 renders; a later corrected sequence retained exact completion counts. Do not turn diagnostic completion into acceptance, skip missing arms or apply the observation-only continuation rule to unsafe faults.
+
+Art review may use an INVALID preview to reject plain slopes or an abrupt ridge ending. It cannot establish protected-pixel, water or original-foot preservation. Conversely, a texture asset containing noise or bands does not prove those features read at the actual viewing distance. Inspect the final images before choosing a texture, UV, fog, normal or shader repair; do not claim an untested mechanism from appearance alone.

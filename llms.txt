@@ -6,6 +6,7 @@
 - [Capture protocol](skills/unity-urp-render-debugging/references/capture-protocol.md): Same-reference comparisons, sorting and first-render shader state.
 - [Selection-aware material guards](skills/unity-urp-render-debugging/references/selection-aware-material-guards.md): Current SubShader tags, transient reference material, independent oracle and observable-override limitations.
 - [Causal experiments](skills/unity-urp-render-debugging/references/causal-experiments.md): Final clone fidelity, changed occlusion, route-dependent water, transition overlays and reference provenance.
+- [Authored-scene integration](skills/unity-urp-render-debugging/references/authored-scene-integration.md): New-data affine adapter, normal/tangent treatment, dependency-cycle witnesses, separate loading/capture clocks and verified asset reuse.
 - [Preservation-first design](skills/unity-urp-render-debugging/references/preservation-first-design.md): Additive versus replacement, hidden-terrain failure, full-slice scope and unproven co-depth overlay coverage.
 - [Replay capability checks](skills/unity-urp-render-debugging/references/replay-capability-checks.md): Target identity, positive controls, same-colour writes, batched events and abort-safe cleanup. No native Frame Debugger capability claim.
 - [Terrain geometry and visual quality](skills/unity-urp-render-debugging/references/terrain-and-water.md): Impossible skirts, water visibility, winding and mountain composition.
@@ -14,6 +15,7 @@
 - [1 November update](evidence/update-2026-11-01.md): Validated material correction and first deterministic bake; asset import and final images still pending.
 - [3 November update](evidence/update-2026-11-03.md): Imported resources, corrected route coverage and bounded causal findings; final imagery still unaccepted.
 - [4 November update](evidence/update-2026-11-04.md): Two-view additive preservation, no-install repeat control, rejected height trial and source-only overlay limits.
+- [4 November afternoon update](evidence/update-2026-11-04-afternoon.md): Actual AA4 overlay rejection, frame/dependency fixes and 72-image INVALID art preview; no preservation acceptance.
 - [Official references](docs/api-references.md): Version-specific Unity APIs.
 - [Report checker](scripts/check_capture_report.py): Standard-library evidence checker; not an image analyser.
 - [Synthetic geometry examples](scripts/geometry_counterexamples.py): Executable counterexamples; not a scene certificate.

@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff_utc": "2026-11-04T16:00:00Z",
+  "scope": "Completed native/source-review receipts through R153. R154 and later plans or work excluded. Continues E21-E26 without modifying that historical snapshot.",
+  "reference": "Explicitly unaccepted reconstructed reference; original historical scene equivalence unproved.",
+  "provenance": "Curated author-reported aggregate observations. Private reports identified by filename and SHA-256 only; hashes are traceability, not independently runnable Unity reproduction.",
+  "environment": {
+    "unity": "6000.3.26f1",
+    "urp": "17.3.0",
+    "backend": "desktop Metal",
+    "headset_validation": false
+  },
+  "observations": [
+    {
+      "id": "E27",
+      "source": {
+        "report": "cp54-r138-ci1-native-supervisor-review-2026-11-04.json",
+        "sha256": "0210f3e1913864aee1622376d57c04b655a7bd0f2b1a3969d57b464f5580c43a",
+        "recorded_utc": "2026-11-04T05:39:56.647758+00:00"
+      },
+      "classification": "author_reported_native_incomplete_overlay_smoke",
+      "observed": {
+        "full_drawn_slice_triangles": 2862,
+        "selected_foot_triangles": 636,
+        "upper_triangles": 2226,
+        "source_ticket": "PASS",
+        "both_owned_upload_readbacks": "PASS_ZERO_BIT_MISMATCHES",
+        "rendered": 6,
+        "scheduled": 24,
+        "arm_reached": "spawn-N, AA1 only",
+        "reference_repeat_pixels": 2,
+        "full_overlay_pixels": 13,
+        "outcome": "INVALID",
+        "cleanup_and_rollback": "PASS"
+      },
+      "limit": "Source-slice and upload feasibility passed, not coverage. The unstable reference invalidated this arm; AA4 and the other view were not reached in this run. No shader-rounding cause or visual success established."
+    },
+    {
+      "id": "E28",
+      "source": {
+        "report": "cp54-r139-final-ci1-native-supervisor-review-2026-11-04.json",
+        "sha256": "cf0e5dc257fa1973817d6d30c00a134ea17e72c3e5097c17db3e055286a26f68",
+        "recorded_utc": "2026-11-04T09:15:45.470799+00:00"
+      },
+      "classification": "author_reported_native_overlay_rejection",
+      "observed": {
+        "saved_renders": 24,
+        "saved_image_hashes_and_counts_independently_reproduced": true,
+        "arms": [
+          {
+            "view": "spawn-N",
+            "samples": 1,
+            "repeat_pixels": 2,
+            "full_overlay_pixels": 13,
+            "verdict": "INVALID"
+          },
+          {
+            "view": "spawn-N",
+            "samples": 4,
+            "repeat_pixels": 0,
+            "full_overlay_pixels": 54,
+            "verdict": "STOP_OVERLAY_HYPOTHESIS_AT_TESTED_POSES"
+          },
+          {
+            "view": "north-balustrade-NE",
+            "samples": 1,
+            "repeat_pixels": 0,
+            "full_overlay_pixels": 0,
+            "verdict": "OBSERVED_MATCH_AT_TESTED_POSES"
+          },
+          {
+            "view": "north-balustrade-NE",
+            "samples": 4,
+            "repeat_pixels": 0,
+            "full_overlay_pixels": 59,
+            "full_overlay_water_extra": 4,
+            "subset_water_extra": 0,
+            "verdict": "STOP_OVERLAY_HYPOTHESIS_AT_TESTED_POSES"
+          }
+        ],
+        "subset_extra_pixels_all_arms": 0,
+        "overall_nunit": "FAILED_WITH_INVALID_RETAINED",
+        "equal_depth_overlay_route": "STOPPED",
+        "cleanup_and_rollback": "PASS"
+      },
+      "limit": "Stable AA4 references reject the exact overlay hypothesis despite one AA1 match. Resolved key-colour experiment only; no unique rounding cause, product or per-sample proof. Full-overlay water-extra is not a demonstrated subset leak."
+    },
+    {
+      "id": "E29",
+      "sources": [
+        {
+          "report": "cp54-r145-additional-e1-frame-mismatch-supervisor-review-2026-11-04.json",
+          "sha256": "62f171a167907c27282585b955ee6f19e704013ec482730f199cc645f34f28d8",
+          "recorded_utc": "2026-11-04T12:42:17.363786+00:00"
+        },
+        {
+          "report": "cp54-r146-new-surface-adapter-plan-supervisor-review-2026-11-04.json",
+          "sha256": "e3458ade853f53d619f7f060eba810cec81b216046e84214bf7b02383f679d17",
+          "recorded_utc": "2026-11-04T12:47:30.095645+00:00"
+        },
+        {
+          "report": "cp54-r147-adapter-e1-built-assets-dependency-hold-supervisor-review-2026-11-04.json",
+          "sha256": "ae7379bcb31fde79719907741e72ba000f66d54758d251936f7990d1687f0221",
+          "recorded_utc": "2026-11-04T13:18:44.530585+00:00"
+        }
+      ],
+      "classification": "author_reported_native_import_mismatch_and_adapter_build",
+      "observed": {
+        "original_and_new_exposed_importer_settings_equal": true,
+        "matrix_numeric_mismatches": 2,
+        "maximum_matrix_element_difference": 1.7999999990525595e-07,
+        "mismatch_signed_zero_only": false,
+        "both_frames_finite_affine_positive_determinant": true,
+        "adapter_scope": "NEW upper attributes only; protected original foot attributes and transforms unchanged",
+        "mapping": "inverse(original_linear) * new_linear, with inverse(original_linear) * (new_translation - original_translation)",
+        "normals": "inverse-transpose of mapping, normalized",
+        "tangents": "linear mapping, normalized; retain w for the strictly positive-determinant branch",
+        "native_adapter_geometry_foot_bounds_save_reload_checks": "PASS",
+        "native_checks_passed_before_unrelated_dependency_hold": 44,
+        "rgb_reached_in_adapter_run": false
+      },
+      "limit": "Exposed settings do not explain importer cause. Double-precision mapping followed by float32 storage is not exact world-space identity or a guarantee for arbitrary ill-conditioned inputs. Native build success is not pixel preservation."
+    },
+    {
+      "id": "E30",
+      "sources": [
+        {
+          "report": "cp54-r148-witnessed-dependency-plan-supervisor-review-2026-11-04.json",
+          "sha256": "fd5c93ba4841309bd16c5f824a34e21c3a7cadb18c6b946cccb85a206bf931d8",
+          "recorded_utc": "2026-11-04T13:25:03.990636+00:00"
+        },
+        {
+          "report": "cp54-r149-e1-pass-first-capture-load-hold-supervisor-review-2026-11-04.json",
+          "sha256": "aab13f14caac30aec3daeaedc6f609337dab98e6c33dc32e587ef7ec766fd7c8",
+          "recorded_utc": "2026-11-04T14:07:53.032050+00:00"
+        }
+      ],
+      "classification": "author_reported_native_witnessed_dependency_contract",
+      "observed": {
+        "byte_copy_control_initial_dependency_contract_failed": true,
+        "baseline_self_reachable_by_direct_edge_witness": true,
+        "baseline_direct_self_edge": false,
+        "baseline_cycle_edges": 2,
+        "all_six_dependency_rules": "PASS",
+        "all_build_checks_passed": 47,
+        "all_build_checks_failed": 0,
+        "foreign_scenes": 0,
+        "original_snapshot": "PASS",
+        "image_run": "HOLD_BEFORE_FIRST_IMAGE"
+      },
+      "limit": "The revised contract was explicitly reviewed, not an arbitrary root-removal exemption. Direct graph evidence supports this dependency interpretation, not runtime causality, pixel preservation or look."
+    },
+    {
+      "id": "E31",
+      "sources": [
+        {
+          "report": "cp54-r149-e1-pass-first-capture-load-hold-supervisor-review-2026-11-04.json",
+          "sha256": "aab13f14caac30aec3daeaedc6f609337dab98e6c33dc32e587ef7ec766fd7c8",
+          "recorded_utc": "2026-11-04T14:07:53.032050+00:00"
+        },
+        {
+          "report": "cp54-r151-p1c1-native-repeat-invalid-supervisor-review-2026-11-04.json",
+          "sha256": "00e1a970e5816cd103e1afa6dfd784ba3e57811ad2c3388eb11527bc5e9702f6",
+          "recorded_utc": "2026-11-04T15:07:32.269337+00:00"
+        }
+      ],
+      "classification": "author_reported_native_capture_clock_correction",
+      "observed": {
+        "earlier_load_frame_limit": 600,
+        "earlier_load_outcome": "HOLD_ZERO_IMAGES",
+        "earlier_timeout_walltime_and_async_timeline": "NOT_RECORDED",
+        "later_load_wall_seconds": 0.44871809999999995,
+        "later_load_frames": 1154,
+        "corrected_protocol": "Separate wall-clock load deadline, completion/callback checks and capture epoch after load",
+        "later_saved_images": 6,
+        "later_scheduled_images": 72,
+        "later_baseline_repeat_pixels": 2,
+        "later_max_channel_delta": 1,
+        "later_result": "INVALID_BEFORE_VARIANT",
+        "cleanup_and_rollback": "PASS",
+        "successful_assets_reused_without_rebake": true
+      },
+      "limit": "A frame limit is not a wall-clock duration. The later measurement does not reconstruct the earlier timeout or prove its engine cause. Solving loading did not solve baseline instability."
+    },
+    {
+      "id": "E32",
+      "source": {
+        "report": "cp54-r153-actual-preview-native-supervisor-review-2026-11-04.json",
+        "sha256": "4a752eebbf917e9c10d2c63c21eaa658df020166f00a350e15183c188cfe9d6a",
+        "recorded_utc": "2026-11-04T15:58:23.903783+00:00"
+      },
+      "classification": "author_reported_native_art_observation_not_acceptance",
+      "observed": {
+        "mode": "ART_OBSERVATION",
+        "saved_renders": 72,
+        "render_sets": 12,
+        "scene_loads": 6,
+        "views": 2,
+        "image_hashes_independently_verified": 72,
+        "raw_comparison_counts_independently_reproduced": 62,
+        "collection": "COMPLETE",
+        "strict_verdict": "INVALID",
+        "invalid_entries": 52,
+        "acceptance_gate_evaluations": 0,
+        "variant_gates_not_evaluated": 4,
+        "acceptance": "NONE",
+        "cleanup_and_rollback": "PASS",
+        "visual_observation": "Broader rounder silhouette and visible new masses beyond water; surfaces remain plain with block-like tonal patches and an abrupt right-hand ridge ending.",
+        "actual_baked_albedo": "Contains variation and clusters; presence of asset detail does not prove on-screen legibility.",
+        "texture_uv_import_fog_shader_or_normal_cause": "NOT_ESTABLISHED"
+      },
+      "limit": "Preview collection was explicitly released separately; it preserves all repeat/control/reload mismatches and cannot pass validation. Foreground, water and foot preservation were NOT_EVALUATED. No final look or headset acceptance; no public images or geometry."
+    }
+  ]
+}
