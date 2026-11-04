@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff_utc": "2026-11-04T18:20:00Z",
+  "scope": "Completed R155-R157 source, bake and native supervisor receipts only. R158 plan and later work excluded. Continues E27-E32 without changing historical snapshots.",
+  "reference": "Unaccepted reconstructed reference; historical serialized-scene identity unproved.",
+  "environment": {
+    "unity": "6000.3.26f1",
+    "urp": "17.3.0",
+    "backend": "desktop Metal",
+    "headset_validation": false
+  },
+  "provenance": "Curated author-reported aggregate observations; source filenames and SHA-256 provide traceability, not an independently runnable Unity reproduction. No raw source geometry or media.",
+  "observations": [
+    {
+      "id": "E33",
+      "source": {
+        "report": "cp54-r155-generator-metric-source-supervisor-review-2026-11-04.json",
+        "sha256": "7a19e69bcdb0d79b481f19f16c96e48a7b8f7b61940c5b3eeb7343466952f16b",
+        "recorded_utc": "2026-11-04T17:43:26.877254+00:00"
+      },
+      "classification": "independent_source_only_analytic_counterexample",
+      "observed": {
+        "existing_python_tests_passed": 33,
+        "declared_recipe_proxies": "PASS",
+        "new_counterexample": "A known world-X plane sampled through skew plan axes reconstructs the wrong world gradient if each directional derivative is divided by axis length and treated as an orthogonal component.",
+        "gradient_error_norms": [
+          0.14950785965538044,
+          1.1353192250133515,
+          0.946830140284573,
+          1.0361515599286866
+        ],
+        "affected_paths": "macro lighting and texture detail-normal inputs",
+        "real_bake_started_before_correction": false
+      },
+      "limit": "Source maths error, not native pixel attribution or proof of the cause of earlier plain rendering. Helper signs and lengths did not exercise the production conversion."
+    },
+    {
+      "id": "E34",
+      "source": {
+        "report": "cp54-r156-metric-corrected-source-ready-supervisor-review-2026-11-04.json",
+        "sha256": "984778b1a41666698803683ca012d0a70237c47458d78fac0830dcf1cbd7492f",
+        "recorded_utc": "2026-11-04T18:00:31.758943+00:00"
+      },
+      "classification": "supervisor_review_and_independently_reproduced_source_tests",
+      "observed": {
+        "independent_python_checks_passed": 43,
+        "corrected_math": "Full inverse-transpose plan Jacobian for gradients, consistent world-lighting basis and production-path plane/skew/rotation/edge/finite tests.",
+        "geometry_vs_pre_correction": "Vertex/triangle/UV/boundary-ID arrays EXACTLY unchanged",
+        "declared_recipe_proxies": "PASS",
+        "scope": "Generator-only correction within the same recipe; protected source unchanged"
+      },
+      "limit": "Detail normal frame uses horizontal plan projection; agreement with steep macro slopes and imported MikkTSpace tangents remains approximate and unproven. Recipe width/depth proxies are along source polylines, not universal perpendicular world-space measures."
+    },
+    {
+      "id": "E35",
+      "source": {
+        "report": "cp54-r156-two-bakes-ready-for-E1-supervisor-review-2026-11-04.json",
+        "sha256": "ce0ca4b9023eb2fa8db69f537af9f2389c255ebc68e5ebb69b22cdc93ee29083",
+        "recorded_utc": "2026-11-04T18:03:33.260546+00:00"
+      },
+      "classification": "author_reported_actual_deterministic_blender_bakes",
+      "observed": {
+        "fresh_bake_processes": 2,
+        "threads_per_process": 1,
+        "numeric_arrays_per_export": 14,
+        "all_numeric_arrays_bit_equal": true,
+        "all_numeric_arrays_finite": true,
+        "png_and_digest_content": "EXACT_MATCH",
+        "vertices": 11786,
+        "triangles": 23214,
+        "boundary_vertices": 320
+      },
+      "limit": "Exported numeric and texture content agreement, not required identity of FBX container timestamps and not artistic, render-preservation or headset success."
+    },
+    {
+      "id": "E36",
+      "source": {
+        "report": "cp54-r156-actual-macro-art-and-native-supervisor-review-2026-11-04.json",
+        "sha256": "bca3abb5184261d561ddbaddbea8eebc2791eb64a82dbb11c29fed8b6e2d075d",
+        "recorded_utc": "2026-11-04T18:09:23.236097+00:00"
+      },
+      "classification": "author_reported_native_completed_recipe_below_visual_target",
+      "observed": {
+        "unity_build_checks_passed": 47,
+        "images": 72,
+        "image_hashes_independently_verified": 72,
+        "raw_comparison_counts_independently_reproduced": 62,
+        "strict_verdict": "INVALID",
+        "invalid_entries": 52,
+        "acceptance_gate_evaluations": 0,
+        "variant_gates_not_evaluated": 4,
+        "visual_ridge_smoothness": "IMPROVED_LOCALLY",
+        "visual_block_patches": "PARTLY_IMPROVED",
+        "surface_detail_legibility": "TARGET_NOT_MET",
+        "layered_depth": "TARGET_NOT_MET",
+        "right_hand_termination": "TARGET_NOT_MET",
+        "cleanup_and_rollback": "PASS",
+        "decision": "Finish this recipe and return to acceptance/control evidence; no automatic second art recipe."
+      },
+      "limit": "Source/proxy/bake/build successes yielded only modest visual improvement. Foreground/water/foot preservation NOT_EVALUATED. Cross-run art inspection is not a matched-pixel causal comparison. No finished landscape or device result."
+    },
+    {
+      "id": "E37",
+      "source": {
+        "report": "cp54-r157-offline-and-human-layering-steering-supervisor-review-2026-11-04.json",
+        "sha256": "9086cb2ae3ada24c153b4d0d3951c5c193e671758ef86a5c0cd139cbec3971bd",
+        "recorded_utc": "2026-11-04T18:19:23.668602+00:00"
+      },
+      "classification": "supervisor_offline_source_asset_and_mask_review_not_normal_rgb_attribution",
+      "observed": {
+        "builder_combination": "Original 636 foot triangles plus authored 23214 upper triangles; old upper surface excluded from the combined variant.",
+        "material_asset_facts": "New albedo and normal assigned with identity scale, zero offset and normal keyword.",
+        "stored_upper_uvs": "11786 unique UVs over [0,1] in both axes; not collapsed.",
+        "upper_diagnostic_mask_pixels": [
+          20258,
+          24067
+        ],
+        "foot_diagnostic_mask_pixels": [
+          2292,
+          4486
+        ],
+        "mask_path": "Replacement diagnostic key material, fog disabled, single-sample target.",
+        "normal_rgb_material_contribution": "NOT_PROVED",
+        "occluding_fallback_layer": "NOT_CONFIRMED",
+        "next": "Read-only plan for a bounded normal-RGB material-response/visibility check before more art changes."
+      },
+      "limit": "Source presence, asset assignments and key-mask visibility do not prove ordinary RGB draw contribution or rule out runtime occlusion. Mask differences or one-level scattered differences do not uniquely identify content changes or an impossible capture contract. No native visibility intervention in this review; later R158 work excluded."
+    }
+  ]
+}

@@ -14,6 +14,7 @@ Optimise for the requested visible result. A passing diagnostic establishes only
 - Landscape gaps, water sightlines, winding or unconvincing mountain forms: [terrain-and-water.md](references/terrain-and-water.md).
 - Imported/live mesh disagreement, static batching, readback ownership or scene exit: [gpu-and-lifecycle.md](references/gpu-and-lifecycle.md).
 - Clone counterfactuals, route-dependent visibility, transition overlays or reconstructed references: [causal-experiments.md](references/causal-experiments.md).
+- Procedural normal/lighting errors on skew coordinates, or textures assigned but not visibly contributing: [normal-metrics-and-material-response.md](references/normal-metrics-and-material-response.md).
 - Authored imports, unequal coordinate frames, copied-scene dependency checks or load/capture clocks: [authored-scene-integration.md](references/authored-scene-integration.md).
 - Repeated replacement failures, hidden additive terrain, or surface-overlay proposals: [preservation-first-design.md](references/preservation-first-design.md).
 - Frame Debugger/replay attribution or capability-tool validation: [replay-capability-checks.md](references/replay-capability-checks.md). Its draft-review lessons are not native debugger validation.

@@ -2,7 +2,7 @@
 
 Practical skills for debugging Unity URP render regressions and adding terrain to an existing VR scene without losing working visuals. Distilled from a preservation-focused memory-palace project in October–November 2026.
 
-**Status:** field-tested diagnostics, bounded preservation results and explicit failed approaches. The [4 November afternoon update](evidence/update-2026-11-04-afternoon.md) adds actual rejection of the equal-depth overlay at 4× MSAA, a successful new-surface coordinate adapter and witnessed dependency build, and 72 actual Unity preview images. Preview validation remains INVALID; preservation gates were not evaluated and the look is unfinished. The reconstructed reference remains unaccepted. Latest evidence cutoff: 2026-11-04 16:00 UTC. This is not a completed world generator or a proven Quest optimisation package.
+**Status:** field-tested diagnostics, bounded repairs and explicit failed approaches. The [4 November evening update](evidence/update-2026-11-04-evening.md) adds a real skew-gradient correction missed by passing tests, deterministic bakes and another actual 72-image trial. The ridge improved modestly, but the visual goal remains unmet; 52 INVALID entries leave preservation unevaluated. Assigned textures and key-mask visibility have not established ordinary-RGB contribution or a covering fallback layer. The reconstructed reference remains unaccepted. Latest evidence cutoff: 2026-11-04 18:20 UTC. This is not a completed world generator or a proven Quest optimisation package.
 
 ## Start here
 
@@ -32,6 +32,8 @@ Use the skill directly by pointing your agent at its `SKILL.md`. In an agent tha
 | A copied scene unexpectedly depends on the original | Reconcile a bounded direct-edge witness with recursive closures | Deleting roots merely because they fail a set comparison |
 | Scene loading exhausts a frame budget | Measure wall time and start capture timing after completion | Treating frame count as elapsed seconds |
 | Strict capture aborts before art can be inspected | Use a separately reviewed preview with no acceptance authority | Reporting collected pictures as preservation PASS |
+| Normal/shading helpers pass but terrain directions look wrong | Test an analytic world-space plane through the full skew-coordinate production path | Treating normalized skew axes as perpendicular |
+| Assigned textures do not read in the final image | Separate asset assignment, key-mask visibility and ordinary-RGB material response | Concluding an occluding layer or working binding from source references alone |
 | Diagnostics keep growing | Name the implementation decision each diagnostic will change | More tests without a concrete product intervention |
 | An inactive water target later hides terrain | Validate co-visibility over route/zone states and refresh the proof inputs | Treating bind-time inactivity as permanent irrelevance |
 | A clone experiment seems to isolate a cause | Compare final bounds and render flags, then account for retained original occlusion | Subtracting clone error counts from replacement counts |
@@ -51,6 +53,7 @@ Python 3.10+; standard library only:
 python3 -m unittest discover -s tests -v
 python3 scripts/geometry_counterexamples.py
 python3 scripts/replay_evidence_counterexamples.py
+python3 scripts/skew_gradient_counterexample.py
 python3 scripts/check_capture_report.py examples/partial-repair.json
 ```
 
