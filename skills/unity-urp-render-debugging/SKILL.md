@@ -9,6 +9,7 @@ Optimise for the requested visible result. A passing diagnostic establishes only
 
 ## Choose the relevant reference
 
+- Many passes with little visual gain, or an implementer working without actual renders: [efficient-visual-iteration.md](references/efficient-visual-iteration.md). Verify visual access, agree on the largest visible defect and reuse unchanged evidence before another expensive pass.
 - Pixel regressions, sorting, masks, baseline instability or first-render materials: [capture-protocol.md](references/capture-protocol.md).
 - Effective material tags changing when the rendering pipeline selects a SubShader: [selection-aware-material-guards.md](references/selection-aware-material-guards.md).
 - Landscape gaps, water sightlines, winding or unconvincing mountain forms: [terrain-and-water.md](references/terrain-and-water.md).
@@ -34,6 +35,8 @@ State a hypothesis, the controlled variable and which implementation decision ea
 Capture a fixed representative cohort before an expensive all-view run. Keep the baseline and control comparable within the same process when feasible, repeat and reverse conditions, and render ordinary RGB subjects before diagnostic mask overrides. Restore state before the next condition. Same-frame capture helps with temporal variation but cannot exclude per-render lighting, ordering or pipeline work.
 
 If the evidence supports a product repair, implement it and compare the visible outcome. Another diagnostic needs a decision that existing evidence cannot answer. After repeated repairs without meaningful gain, reconsider the design or expose a concrete constraint conflict instead of extending an unlimited diagnostic chain. This is a stopping heuristic, not a fixed universal experiment budget.
+
+For image-driven changes, the implementer and supervisor should inspect the same authorized reference and actual control/candidate images. Verify returned image content; paths and captions alone do not establish sight of the result. Keep resized visual displays separate from original-file pixel checks.
 
 ## Avoid the expensive false shortcuts
 

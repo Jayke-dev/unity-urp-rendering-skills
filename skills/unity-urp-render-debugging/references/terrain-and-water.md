@@ -29,3 +29,11 @@ Review macro silhouette first: broad asymmetrical masses, overlapping shoulders,
 Regular horizontal terraces, pale smooth surfaces and an impressive unseen texture atlas did not achieve the source project's brief. Check how much authored terrain is actually visible through the architecture. More texture detail cannot fix a flat dominant silhouette or surfaces hidden behind accepted scenery.
 
 Use representative crops for quick rejection and the full fixed-view set for acceptance. Keep a visible quality rubric alongside water, foreground, text and geometry gates. Desktop results do not replace headset checks.
+
+## Check simple feasibility before choosing more elaborate authoring
+
+For a regular grid, V=columns*rows and T=2*(columns-1)*(rows-1). A vertex cap is an upper bound, not a mandatory V. A source proposal falsely ruled out regular grids by substituting the cap as equality; a 100×23 grid (2300 vertices, 4356 triangles) was a counterexample under both caps. Choose adaptive topology for a demonstrated benefit, not this invalid impossibility argument. See the synthetic [planning examples](../../../scripts/planning_counterexamples.py).
+
+For uniform angular texture coordinates, horizontal perspective projection is x=W/2*(1+tan(theta)/tan(halfFov)); its local derivative is W/(2*tan(halfFov)*cos(theta)^2). Average FOV/pixel is not a whole-frame texel-density guarantee. Include the surface/UV Jacobian, viewpoint and distance assumptions when converting to world density. A farther/deeper range can improve volume/parallax without increasing the angular window above a nearer silhouette.
+
+Clipping many per-column peaks to a ceiling can produce terraces. Review the final silhouette and prefer intrinsically feasible shapes. Erosion/blending can change extrema: thermal redistribution may raise local valleys, so validate final float32 vertices, not only the pre-erosion field. These are design checks, not a validated mountain generator.

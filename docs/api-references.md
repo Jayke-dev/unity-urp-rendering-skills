@@ -19,3 +19,7 @@ No Unity documentation or package source is vendored here. The application-speci
 Additional reference checked 2026-11-04:
 
 - [AssetDatabase.GetDependencies (6000.3)](https://docs.unity.com/en-us/engine/6000.3/script-reference/unityeditor/assetdatabase/getdependencies): distinguishes direct and recursive asset references; recursive results contain the requested root. Root inclusion alone is not a positive-length cycle witness. The source case's actual graph evidence is in the afternoon addendum, not established by the API documentation.
+
+Additional workflow reference checked 2026-11-05:
+
+- [Claude Code Read tool](https://code.claude.com/docs/en/tools-reference#read-tool-behavior): supported image files are returned as visual content, with resizing/recompression possible. A successful image Read proves delivery of visual input; it does not certify exact pixels or the quality of the model's interpretation. The source case's verified read results are recorded in the 5 November addendum.

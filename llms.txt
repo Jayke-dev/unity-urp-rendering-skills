@@ -3,6 +3,7 @@
 > Evidence-aware Unity URP render debugging, terrain preservation, static-batch geometry, baseline control and GPU lifecycle lessons for coding agents.
 
 - [Skill](skills/unity-urp-render-debugging/SKILL.md): Start here; load references selectively.
+- [Efficient visual iteration](skills/unity-urp-render-debugging/references/efficient-visual-iteration.md): Verify implementer image access, reject weak macro-form early, separate art/preservation and reuse unchanged evidence. Retrospective guidance, no measured speedup.
 - [Capture protocol](skills/unity-urp-render-debugging/references/capture-protocol.md): Same-reference comparisons, sorting and first-render shader state.
 - [Selection-aware material guards](skills/unity-urp-render-debugging/references/selection-aware-material-guards.md): Current SubShader tags, transient reference material, independent oracle and observable-override limitations.
 - [Causal experiments](skills/unity-urp-render-debugging/references/causal-experiments.md): Final clone fidelity, changed occlusion, route-dependent water, transition overlays and reference provenance.
@@ -18,6 +19,8 @@
 - [4 November update](evidence/update-2026-11-04.md): Two-view additive preservation, no-install repeat control, rejected height trial and source-only overlay limits.
 - [4 November afternoon update](evidence/update-2026-11-04-afternoon.md): Actual AA4 overlay rejection, frame/dependency fixes and 72-image INVALID art preview; no preservation acceptance.
 - [4 November evening update](evidence/update-2026-11-04-evening.md): Real metric repair, deterministic bakes, limited visual gain and unconfirmed layering hypothesis.
+- [5 November update](evidence/update-2026-11-05.md): Actual texture response, zero-test capture error, fourteen-image strict failure/art rejection, corrected feasibility, verified image reads and workload retrospective. New landform outcome still pending.
+- [Synthetic planning examples](scripts/planning_counterexamples.py): Grid upper bounds, overlapping coverage intervals and perspective texture density; not a scene or GPU certificate.
 - [Synthetic skew-gradient example](scripts/skew_gradient_counterexample.py): Invented affine plane showing why normalized skew axes are not orthogonal.
 - [Official references](docs/api-references.md): Version-specific Unity APIs.
 - [Report checker](scripts/check_capture_report.py): Standard-library evidence checker; not an image analyser.

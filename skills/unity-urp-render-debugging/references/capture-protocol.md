@@ -34,6 +34,14 @@ Later work isolated a selected-SubShader tag change at the same first-render bou
 
 `DIAGNOSTIC_VALID` means the setup and files met the experiment contract. It can coexist with `PRESERVATION_FAIL`. A Unity test process returning success is not itself a visual-quality verdict. Report diagnostic validity, repair effect, preservation and art acceptance independently.
 
+Match the launch filter to the reviewed source or compiled/discovered test entry, then require the expected nonzero test count and image outputs. One capture process exited zero after a method rename but selected no tests. Its successful asset build remained reusable; only capture needed correction.
+
+## Antialiasing response does not certify sample ownership
+
+A later fourteen-image trial had exact repeats, unchanged water/foot comparisons and 31 strict foreground residuals. All 31 showed an owned-colour response at four samples, with none detected at those locations at one sample. This supports a partial/background-coverage explanation at that view. It does not establish exclusive sample ownership, absence of presence effects or permission to waive the residuals. No detected response is not proof of absence.
+
+If a scalar weight has an uncertainty interval, `ridge.low <= background.high` means a desired ordering is compatible with some values; it is not established for all values. Under independent interval assumptions, `ridge.high <= background.low` establishes that scalar ordering, but still not subset identity of actual MSAA samples. Overlapping intervals remain unresolved. The synthetic [planning examples](../../../scripts/planning_counterexamples.py) illustrate the logic, not a GPU coverage estimator. Keep the actual acceptance contract separate.
+
 
 ## Separate first-render variation from installation
 

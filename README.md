@@ -2,11 +2,12 @@
 
 Practical skills for debugging Unity URP render regressions and adding terrain to an existing VR scene without losing working visuals. Distilled from a preservation-focused memory-palace project in October–November 2026.
 
-**Status:** field-tested diagnostics, bounded repairs and explicit failed approaches. The [4 November evening update](evidence/update-2026-11-04-evening.md) adds a real skew-gradient correction missed by passing tests, deterministic bakes and another actual 72-image trial. The ridge improved modestly, but the visual goal remains unmet; 52 INVALID entries leave preservation unevaluated. Assigned textures and key-mask visibility have not established ordinary-RGB contribution or a covering fallback layer. The reconstructed reference remains unaccepted. Latest evidence cutoff: 2026-11-04 18:20 UTC. This is not a completed world generator or a proven Quest optimisation package.
+**Status:** field-tested diagnostics, bounded repairs and explicit failed approaches. The [5 November update](evidence/update-2026-11-05.md) adds verified worker visual access, a controlled ordinary-RGB texture response, a valid fourteen-image trial that still fails preservation and art, and cheap counterexamples that corrected the next design plan. The broader landform implementation has no validated rendered outcome at this cutoff. Earlier 52 INVALID entries and later 31-pixel strict failure remain; the reconstructed reference is unaccepted. Latest evidence cutoff: 2026-11-05 08:10 UTC. This is not a completed world generator or a proven Quest optimisation package.
 
 ## Start here
 
 - **Agents:** read [AGENTS.md](AGENTS.md), then [the skill](skills/unity-urp-render-debugging/SKILL.md). Load only the reference relevant to the problem.
+- **Little visible gain after many passes:** start with [efficient visual iteration](skills/unity-urp-render-debugging/references/efficient-visual-iteration.md): verify the implementer sees actual images, test macro-form early and reuse unchanged evidence. These are retrospective recommendations, with no measured percentage speedup.
 - **People:** start with the decision table below and [the case study](evidence/case-study.md).
 - **Tools:** run the dependency-free [capture-report checker](scripts/check_capture_report.py) on your own aggregate evidence. It checks reported evidence, not images or GPU state.
 - **Discovery:** [llms.txt](llms.txt) and [skills.json](skills.json) identify the entry point. These aid retrieval; publishing them does not guarantee indexing or automatic learning by any model.
@@ -17,6 +18,9 @@ Use the skill directly by pointing your agent at its `SKILL.md`. In an agent tha
 
 | Symptom | Next useful decision | Avoid |
 |---|---|---|
+| Implementer proposes changes from descriptions alone | Verify actual image content reaches it; compare reference/control/candidate independently | Treating paths, captions or checksums as sight of the result |
+| A capture process exits zero but produces no images | Verify exact test-entry identity, nonzero test count and actual outputs | Rebuilding unchanged assets or reporting no tests as PASS |
+| A geometry plan rules out a simple grid | Check both caps with V below its maximum | Treating a budget ceiling as mandatory allocation |
 | Adding distant terrain changes foreground pixels | Test one owned rendering variable against an unchanged baseline in the same process | Comparing totals from different process baselines |
 | A sorting mode makes the error nearly disappear | Compare the alternate baseline with the original baseline too | Calling a moved baseline a preservation fix |
 | Imported geometry matches but the live copy differs | Verify actual drawn slice, vertex layout, transform and batching | Assuming the prefab CPU mesh is the final draw geometry |
@@ -54,6 +58,7 @@ python3 -m unittest discover -s tests -v
 python3 scripts/geometry_counterexamples.py
 python3 scripts/replay_evidence_counterexamples.py
 python3 scripts/skew_gradient_counterexample.py
+python3 scripts/planning_counterexamples.py
 python3 scripts/check_capture_report.py examples/partial-repair.json
 ```
 

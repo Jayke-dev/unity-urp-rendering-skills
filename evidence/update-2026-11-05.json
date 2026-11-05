@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff_utc": "2026-11-05T08:10:00Z",
+  "scope": "Completed R160 material response, R173 actual capture, R174/R175 source review and verified visual access. R176 implementation and all later native outcomes excluded. Continues E33-E37 without rewriting old cutoffs.",
+  "reference": "Unaccepted reconstructed reference; historical identity gaps and original failure ledgers retained.",
+  "environment": {
+    "unity": "6000.3.26f1",
+    "urp": "17.3.0",
+    "backend": "desktop Metal",
+    "headset_validation": false
+  },
+  "provenance": "Curated author-reported aggregates and source-report hashes. Hashes bind private review evidence but do not provide a public Unity reproduction. No private media, poses, logs, local paths or account/session identifiers.",
+  "observations": [
+    {
+      "id": "E38",
+      "sources": [
+        {
+          "report": "cp54-r160-six-rgb-actual-native-supervisor-review-2026-11-04.json",
+          "sha256": "f10703c4957882b2220b7e5674cacb1942169b1c9358fc00686cb1548e67cbef",
+          "recorded_utc": "2026-11-04T19:02:32.032854+00:00"
+        }
+      ],
+      "classification": "author_reported_controlled_ordinary_RGB_material_response",
+      "observed": {
+        "images": 6,
+        "repeat_pair_differing_pixels": [
+          0,
+          0
+        ],
+        "restored_vs_original_differing_pixels": 0,
+        "texture_intervention_pixels_delta_at_least_4": 24019,
+        "texture_max_channel_delta": 106,
+        "tint_intervention_pixels_delta_at_least_4": 2428,
+        "tint_max_channel_delta": 14,
+        "cleanup_faults": 0,
+        "visual_target_met": false
+      },
+      "limit": "Visible texture response at this view rules out complete covering as the sole explanation for zero influence here. It does not rule out partial occlusion, establish exclusive GPU ownership, explain weak real texture detail or establish preservation."
+    },
+    {
+      "id": "E39",
+      "sources": [
+        {
+          "report": "cp54-r173-zero-test-capture-entry-supervisor-review-2026-11-05.json",
+          "sha256": "deed383438ac7d22c9ce9d4f436e42814b6c2d98493f2b9fad6c10f72c5a6b83",
+          "recorded_utc": "2026-11-05T07:29:03.544454+00:00"
+        }
+      ],
+      "classification": "author_reported_native_dispatch_error_and_asset_reuse",
+      "observed": {
+        "build_checks_passed": 49,
+        "capture_process_exit": 0,
+        "selected_testcases": 0,
+        "images": 0,
+        "cause": "Capture filter retained the old method name after a source rename.",
+        "correction": "Cross-check exact source/compiled entry, then perform a separately authorized capture-only run using byte-verified saved assets.",
+        "build_invalidated_by_entry_error": false
+      },
+      "limit": "Zero test selection is not a test pass and says nothing about candidate appearance. This is a corrected launcher error, not a render breakthrough."
+    },
+    {
+      "id": "E40",
+      "sources": [
+        {
+          "report": "cp54-r173-actual14-image-preservation-and-art-approach-review-2026-11-05.json",
+          "sha256": "0b5bdd546009b6a1f09864e09e20c85b9fb3bf4124863590ee61827e035a1d62",
+          "recorded_utc": "2026-11-05T07:40:04.096605+00:00"
+        }
+      ],
+      "classification": "author_reported_valid_actual_capture_with_preservation_failure_and_art_rejection",
+      "observed": {
+        "images": 14,
+        "invalid": 0,
+        "holds": 0,
+        "cleanup_faults": 0,
+        "control_repeat_diff": 0,
+        "candidate_repeat_diff": 0,
+        "strict_foreground_residual": 31,
+        "water_mask_diff": 0,
+        "interior_water_colour_diff": 0,
+        "original_foot_interior_diff": 0,
+        "residuals_with_owned_colour_response_at_AA4_and_none_detected_at_AA1": 31,
+        "strict_verdict": "FAIL",
+        "art_verdict": "REJECTED",
+        "visible_change": "Far layer visibly cooler, but pale curtain/terrace forms and isolated smooth mound remain; nearer patchiness and foot seam remain.",
+        "source_design_review": "Six radial rows span only 60 metres, with 30 capped columns in the build. Narrow depth and clipped tops are plausible contributors, not a uniquely demonstrated visual cause."
+      },
+      "limit": "One current viewpoint on an unaccepted experimental reference. AA4-only response supports partial/background-coverage mixing; it does not establish exclusive sample ownership or permit an acceptance waiver. No final landscape or device success."
+    },
+    {
+      "id": "E41",
+      "sources": [
+        {
+          "report": "cp54-r174-volumetric-plan-supervisor-review-2026-11-05.json",
+          "sha256": "945f76cb7b06eb58de46f0c4b832910a20d072cf7cf71ace4b6c1994804d81ab",
+          "recorded_utc": "2026-11-05T07:53:55.286056+00:00"
+        },
+        {
+          "report": "cp54-r175-visual-plan-supervisor-implementation-release-review-2026-11-05.json",
+          "sha256": "3c9ec9e762f0549e066d66fe543d88a0bad40940594fd0bf8aa08747c90c2f0c",
+          "recorded_utc": "2026-11-05T08:09:07.912830+00:00"
+        }
+      ],
+      "classification": "independently_reviewed_source_arithmetic_and_counterexamples_not_rendered_solution",
+      "observed": {
+        "regular_grid_counterexamples": [
+          {
+            "columns": 100,
+            "rows": 23,
+            "vertices": 2300,
+            "triangles": 4356
+          },
+          {
+            "columns": 120,
+            "rows": 20,
+            "vertices": 2400,
+            "triangles": 4522
+          },
+          {
+            "columns": 200,
+            "rows": 12,
+            "vertices": 2400,
+            "triangles": 4378
+          }
+        ],
+        "caps": {
+          "vertices": 2730,
+          "triangles": 4540
+        },
+        "incorrect_inference": "Substituting the maximum vertex allowance as an obligatory vertex count falsely ruled out all regular grids.",
+        "coverage_interval_correction": "ridge.low <= background.high establishes compatibility, not ridge <= background. Under the stated independent interval model, ridge.high <= background.low establishes that scalar ordering, not MSAA subset identity.",
+        "projection_correction": "Uniform angular texture coordinates do not have uniform screen density under perspective; use the local projection/UV Jacobian.",
+        "memory_correction": "Mip-chain size alone omitted encoding, decode/import and mesh/authoring buffers. Revised accounted source sum was 29,776,356 bytes, not a measured runtime peak.",
+        "erosion_correction": "Thermal redistribution can raise a local valley. Validate cap safety after all erosion/blending and on final float32 vertices."
+      },
+      "limit": "Corrected broader-landform plan released for implementation, with future actual build/capture required. No claim that the proposed topology, erosion or haze has produced a better image. Additional coverage ledger parked; original strict failures retained."
+    },
+    {
+      "id": "E42",
+      "sources": [
+        {
+          "report": "visual-feedback-verified-2026-11-05.json",
+          "sha256": "7070fb8167847ed46706f850ab9f55632f5451a67715e503ebe25974860d0eae",
+          "recorded_utc": "2026-11-05T07:59:46.415589+00:00"
+        },
+        {
+          "report": "cp54-r175-selected-image-read-supervisor-verification-2026-11-05.json",
+          "sha256": "81110b0d768d7fc4a4694d21b4c0316dba6a4a5be10fb71fbac3befaa6bf39e2",
+          "recorded_utc": "2026-11-05T07:59:39.455468+00:00"
+        },
+        {
+          "report": "cp54-r175-visual-plan-supervisor-implementation-release-review-2026-11-05.json",
+          "sha256": "3c9ec9e762f0549e066d66fe543d88a0bad40940594fd0bf8aa08747c90c2f0c",
+          "recorded_utc": "2026-11-05T08:09:07.912830+00:00"
+        }
+      ],
+      "classification": "verified_worker_visual_input_and_independent_review",
+      "observed": {
+        "earlier_task_constraint": "Source-worker task explicitly prohibited image reads.",
+        "human_authorized_exception": "Three selected files only: generated distant-landscape concept, actual control and actual candidate.",
+        "matched_image_read_requests": 3,
+        "successful_visual_image_results": 3,
+        "image_read_errors": 0,
+        "tool_display_media_type": "image/jpeg",
+        "independent_review": "Worker and supervisor agree on pale curtain, flat tops, isolated mound, weak slope contrast and remaining near-layer defects.",
+        "launch_changes": "No extra model, MCP server or Unity process needed for image reads; current source owner and safe-mode boundary retained."
+      },
+      "limit": "Confirms returned visual image content and subsequent image-specific review, not a measured speedup or successful new terrain. Tool display recompressed the original PNGs; exact pixel checks use original files. Raw renders remain private."
+    },
+    {
+      "id": "E43",
+      "sources": [
+        {
+          "report": "time-audit-2026-11-05.json",
+          "sha256": "e5d89bd9e5a68f1cd133fecbc3dd24037a48d951e0f483b5a477aae68ccb3eb3",
+          "recorded_utc": "2026-11-05T08:08:40.230273+00:00"
+        }
+      ],
+      "classification": "local_log_workload_audit_and_unvalidated_retrospective_recommendations",
+      "observed": {
+        "snapshot_utc": "2026-11-05T08:08:40.230273+00:00",
+        "landscape_worker_invocations": 175,
+        "source_worker_hours": 31.84,
+        "associated_codex_hours": 42.88,
+        "combined_agent_hours": 74.72,
+        "unique_clock_hours_with_recorded_activity": 63.11,
+        "calendar_elapsed_hours": 156.03,
+        "coverage": "Five selected Codex task threads and official landscape worker logs. Includes failed work, tools and waits; some closely related workflow/build work is included.",
+        "timing_caution": "Per-invocation duration_ms used where an end timestamp was missing. Resumed duration_api_ms can be cumulative and was not summed."
+      },
+      "limit": "No causal allocation of wasted time and no measured counterfactual saving. Early visual access, macro-form trials, decisive experiments and dependency-scoped reuse are recommendations grounded in the observed failure pattern, not evidence of a specific percentage speedup."
+    }
+  ]
+}

@@ -6,4 +6,6 @@ Case-study counts are observations in one pinned environment, not universal cons
 
 Respect the target project's actual visual contract and permissions. This repository does not require exact pixel identity in projects whose user permits visual changes; it explains how to reason when a preservation requirement exists. It never grants permission to mutate an existing scene or publish private evidence.
 
+The 5 November addendum establishes ordinary-RGB texture response at one view, a valid fourteen-image comparison with 31 strict residuals and rejected art, corrected source feasibility, and successful visual content returned to the implementer. It does not establish sample ownership or a better rendered outcome for the newly proposed broader landforms. The workload audit measures logged time, not avoidable waste or a percentage saving. For repeated low-gain passes, use the focused efficient-visual-iteration reference before loading more historical diagnostics.
+
 When editing the Python helpers, run `python3 -m unittest discover -s tests -v`. Keep the distinction between metadata checks, synthetic geometry examples, actual Unity execution, visual judgment and target-device validation.
