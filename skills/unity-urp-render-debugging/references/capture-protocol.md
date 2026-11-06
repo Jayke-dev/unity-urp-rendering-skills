@@ -34,6 +34,8 @@ Later work isolated a selected-SubShader tag change at the same first-render bou
 
 `DIAGNOSTIC_VALID` means the setup and files met the experiment contract. It can coexist with `PRESERVATION_FAIL`. A Unity test process returning success is not itself a visual-quality verdict. Report diagnostic validity, repair effect, preservation and art acceptance independently.
 
+Require non-vacuous execution evidence for the claim being tested. A resource/shadow guard can refuse before drawing while pass-off images remain exact. Pair original/owned identity redraws with actual pass-record/execution counters and an effective positive-control arm. Later isolated-fixture functional checks passed while ten memory rows remained UNKNOWN, so the overall result correctly stayed INVALID. Existing diagnostic authorization must explicitly cover any collection under an unknown budget; it is not implied by these lessons.
+
 Match the launch filter to the reviewed source or compiled/discovered test entry, then require the expected nonzero test count and image outputs. One capture process exited zero after a method rename but selected no tests. Its successful asset build remained reusable; only capture needed correction.
 
 ## Antialiasing response does not certify sample ownership

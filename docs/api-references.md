@@ -23,3 +23,8 @@ Additional reference checked 2026-11-04:
 Additional workflow reference checked 2026-11-05:
 
 - [Claude Code Read tool](https://code.claude.com/docs/en/tools-reference#read-tool-behavior): supported image files are returned as visual content, with resizing/recompression possible. A successful image Read proves delivery of visual input; it does not certify exact pixels or the quality of the model's interpretation. The source case's verified read results are recorded in the 5 November addendum.
+
+Additional references checked 2026-11-06:
+
+- [CommandBuffer.DrawRenderer (6000.3)](https://docs.unity.com/en-us/engine/6000.3/script-reference/unityengine/rendering/commandbuffer/drawrenderer): does not set up lighting-related shader inputs; reusing a lit material is not a complete draw-context setup. The case failure and later renderer-list result are separate observations, not promised API equivalence.
+- [Camera.overrideSceneCullingMask (6000.3)](https://docs.unity.com/en-us/engine/6000.3/script-reference/unityengine/camera/overridescenecullingmask): camera scene-culling selection, with the related Editor scene-mask API. It does not prove isolation of every global lighting input; the native before/after controls and limitations are in the 6 November addendum.

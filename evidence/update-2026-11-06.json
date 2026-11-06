@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff_utc": "2026-11-06T10:54:00Z",
+  "scope": "Significant completed evidence after E43, through reviewed R213. Includes earlier R179/R185/R189 milestones not yet published. R214 and later outcomes excluded.",
+  "environment": {
+    "unity": "6000.3.26f1",
+    "urp": "17.3.0",
+    "observed_backend": "desktop Metal",
+    "headset_validation": false
+  },
+  "reference": "Far/near palace observations use an unaccepted reconstructed reference. R212 uses a separately isolated synthetic fixture and a changed reference.",
+  "provenance": "Curated author-reported observations with private source-report hashes. Raw frames were rechecked locally for E49; no raw media, geometry, poses, logs, local paths or account/session identifiers published. Hashes alone do not provide a public Unity reproduction.",
+  "observations": [
+    {
+      "id": "E44",
+      "sources": [
+        {
+          "report": "cp54-r179-native-render-supervisor-review-2026-11-05.json",
+          "sha256": "f7a2c39f5fb4af473587656e0c9acfc8182c3f74adb3e602bf9a18bfd77a353d",
+          "recorded_utc": "2026-11-05T09:39:37.315907+00:00"
+        }
+      ],
+      "classification": "author_reported_actual_far_only_preservation_and_visual_improvement",
+      "observed": {
+        "images_in_trial": 16,
+        "far_only_foreground_residual": 0,
+        "far_only_water_mask_diff": 0,
+        "far_only_interior_water_colour_diff": 0,
+        "far_only_foot_interior_diff": 0,
+        "far_only_changed_pixels": 28278,
+        "reference_and_candidate_repeat_differences": 0,
+        "near_only_and_combined_foreground_residual": [
+          31,
+          31
+        ],
+        "overall_trial": "FAIL_PROTECTED",
+        "visual_far": "Two summits, a saddle and descending shoulder replace the blunt dome; far depth and cooler separation improve. Still broad/smooth against reference.",
+        "visual_near": "Pale/patchy original upper and conspicuous foot seam remain; aerial near variant not accepted."
+      },
+      "limit": "Single tested viewpoint on an unaccepted reconstructed reference. Far-only metric success is not full-view, art or device acceptance; combined trial still fails. It does not establish the cause of the old far residual."
+    },
+    {
+      "id": "E45",
+      "sources": [
+        {
+          "report": "cp54-r185-native-control-supervisor-review-2026-11-05.json",
+          "sha256": "972078c9282214567abaa0bcda92873a48fec1447325df6c13a3092d8152e923",
+          "recorded_utc": "2026-11-05T11:12:25.754351+00:00"
+        },
+        {
+          "report": "cp54-r189-native-order-supervisor-review-2026-11-05.json",
+          "sha256": "6aa0fc659195c21a0b431d4dc569ec5f6ce896f9b5a51733190abf633d341932",
+          "recorded_utc": "2026-11-05T12:26:25.219086+00:00"
+        }
+      ],
+      "classification": "author_reported_native_counterfactuals_retiring_a_non_neutral_draw_copy_route",
+      "observed": {
+        "unchanged_material_clone_changed_pixels": 0,
+        "new_texture_path_foreground_residual": 31,
+        "exact_order_owned_mesh_copy_foreground_residual": 32,
+        "partitioned_copy_foreground_residual": 32,
+        "partition_additional_allowed_region_changes": 74,
+        "total_changed_pixels_neutral_partition": 106,
+        "residual_sets_exactly_equal_between_copy_arms": true,
+        "original_return_changed_pixels": 0,
+        "decision": "Retire the copied whole-mesh draw as a neutral near repair route; do not repeat this discriminator."
+      },
+      "limit": "Material-instance-alone explanation unsupported in that test; texture content/resolution/derived bindings not separated. Copy controls do not identify a unique writer or engine mechanism and are not comparable to the later isolated synthetic baseline."
+    },
+    {
+      "id": "E46",
+      "sources": [
+        {
+          "report": "cp54-r200-two-render-clear-quantisation-supervisor-review-2026-11-05.json",
+          "sha256": "70a4247ff1db103e08cfbbb3723eae972f3e25207bd511acfc617e51525d83f3",
+          "recorded_utc": "2026-11-05T16:51:11.705726+00:00"
+        },
+        {
+          "report": "cp54-r201-five-render-editor-msaa-attachment-supervisor-review-2026-11-05.json",
+          "sha256": "cc642cef0fe8045f599affcade786b601dcb931eb539b097cb60257e33b2bc90",
+          "recorded_utc": "2026-11-05T17:00:41.411875+00:00"
+        },
+        {
+          "report": "cp54-r204-depth-format-refusal-supervisor-review-2026-11-05.json",
+          "sha256": "49b74c2e43e6a786c35e30c2ff500d2e4f80b47593b43c9b5c76c990eef49b64",
+          "recorded_utc": "2026-11-05T17:43:51.186556+00:00"
+        }
+      ],
+      "classification": "author_reported_native_fixture_and_resource_guard_failures_before_product_intervention",
+      "observed": {
+        "fractional_clear_control": "Empty versus populated synthetic background differed by one blue code value before the near feature registered. Owned synthetic clear changed to black in the later protocol.",
+        "clear_mechanism": "Quantisation hypothesis, not uniquely proved.",
+        "editor_MSAA": "Backbuffer-handle equality refused the Editor offscreen intermediate route; zero-change images occurred before the near pass executed.",
+        "depth_guard": "Hardcoded depth-format guard refused before any near write. Narrow correction used the pinned pipeline default-format query while retaining other descriptor checks.",
+        "lesson": "Report pass attempts/execution and effective resource descriptors; a refusal-induced zero-difference image is not an identity-redraw pass."
+      },
+      "limit": "Fixture-owned corrections and specifically reviewed resource-route changes only. No global AA/depth setting change, blanket guard weakening, product repair or portable resource/memory guarantee."
+    },
+    {
+      "id": "E47",
+      "sources": [
+        {
+          "report": "cp54-r205-seven-render-original-lit-redraw-failure-supervisor-review-2026-11-05.json",
+          "sha256": "ea510a98c7696d5884d96644cae961e3666cf10999828b5d9ce976430587b549",
+          "recorded_utc": "2026-11-05T17:53:09.031745+00:00"
+        }
+      ],
+      "classification": "author_reported_native_direct_lit_redraw_identity_failure",
+      "observed": {
+        "observations": 7,
+        "repeat_changed_pixels": 0,
+        "pass_off_changed_pixels": 0,
+        "original_return_changed_pixels": 0,
+        "original_material_redraw_changed_pixels": 66385,
+        "redraw_alpha_changed_pixels": 0,
+        "mask_and_attachment_route": "Executed; original-material lit redraw still failed.",
+        "visual": "Synthetic target became black over much of its silhouette.",
+        "next_route": "Review a renderer-list/culling-context approach; direct DrawRenderer is documented not to set up lighting-related shader data."
+      },
+      "limit": "Synthetic failure, not a palace screenshot. API documentation explains a relevant limitation; it does not uniquely prove the cause of every changed pixel or guarantee a renderer-list replacement."
+    },
+    {
+      "id": "E48",
+      "sources": [
+        {
+          "report": "cp54-r208-shadow-support-refusal-native-supervisor-review-2026-11-06.json",
+          "sha256": "02c0727dbfe374f6740c97a7c933cab120320e4924dbb99993155839df0a6d54",
+          "recorded_utc": "2026-11-06T09:11:51.805278+00:00"
+        },
+        {
+          "report": "cp54-r210-actual-casting-light-refusal-native-supervisor-review-2026-11-06.json",
+          "sha256": "a16c75c81e01c3674ea5fb449e66245fb09f7b69d8a0b10013e3908837f99f7d",
+          "recorded_utc": "2026-11-06T09:33:36.308385+00:00"
+        },
+        {
+          "report": "cp54-r211-owned-isolation-unapplied-source-supervisor-review-2026-11-06.json",
+          "sha256": "80eeaa72938c0853d7c8df6f18fea3fd9b2e8c0f2f70551e5371a10b1e36b064",
+          "recorded_utc": "2026-11-06T09:45:20.730292+00:00"
+        }
+      ],
+      "classification": "reviewed_fixture_isolation_design_from_actual_guard_refusals",
+      "observed": {
+        "first_shadow_guard": "Rejected shadow capability before any renderer-list attempt.",
+        "second_shadow_guard": "Observed a visible shadow-casting light even though the fixture light was configured not to cast.",
+        "foreign_light_origin": "Plausible, not uniquely established by these receipts.",
+        "revised_fixture": "Temporarily lease scene/camera culling masks only on owned objects, retain foreign lights/global settings, add same-process isolation-off and isolation-on controls and visible-light ownership facts.",
+        "late_cleanup": "Lease restoration must handle a genuine scene that has already unloaded."
+      },
+      "limit": "Scene-mask APIs do not by themselves establish ownership of all lighting inputs or all engine scenes. Source review alone did not validate the GPU effect. Guard refusals with no list execution are not rendering successes."
+    },
+    {
+      "id": "E49",
+      "sources": [
+        {
+          "report": "cp54-r212-synthetic-functional-controls-and-lifecycle-native-supervisor-review-2026-11-06.json",
+          "sha256": "b32412dcadd6d63b6fa92d2b25dc3247274b62d797d184d59d52667e446fb5f7",
+          "recorded_utc": "2026-11-06T10:00:49.161714+00:00"
+        }
+      ],
+      "classification": "actual_synthetic_functional_and_lifecycle_result_with_local_independent_raw_recount",
+      "observed": {
+        "images": 28,
+        "RGBA_byte_exact_comparisons": 16,
+        "original_material_identity_changed_pixels": 0,
+        "owned_material_identity_changed_pixels": 0,
+        "static_batched_original_and_owned_identity_changed_pixels": [
+          0,
+          0
+        ],
+        "key_changed_pixels_each_case": 45250,
+        "active_changed_pixels_each_case": 24300,
+        "key_and_active_protected_or_masked_hits": 0,
+        "key_required_pixels_missed": 0,
+        "second_camera_changed_pixels": 0,
+        "unsupported_producer_whole_frame_noop": "PASS",
+        "readbacks_issued_consumed_retired": [
+          20,
+          20,
+          20
+        ],
+        "readback_max_live": 1,
+        "readback_remaining": 0,
+        "mask_mismatch_pixels": 0,
+        "near_pass_records_and_executions": [
+          10,
+          10
+        ],
+        "existing_attachment_records": 10,
+        "cleanup_faults": 0,
+        "postexit_instances_and_subscriptions": [
+          0,
+          0
+        ],
+        "genuine_scene_unload": "PASS; actual sceneUnloaded teardown and no enqueue after exit.",
+        "isolation_off_vs_isolated_reference_changed_pixels": 826,
+        "isolation_on_repeat_changed_pixels": 0,
+        "last_static_batched_light_snapshot": {
+          "visible": 1,
+          "owned": 1,
+          "unowned": 0,
+          "owned_casting": 0,
+          "shadow_route": "NoCapability"
+        },
+        "unknown_memory_rows": 10,
+        "budget": "UNKNOWN",
+        "overall": "INVALID",
+        "NUnit": "Failed as required by unknown budget",
+        "review_thread_recheck": "All 28 raw hashes and complete frame lengths, 16 byte-exact RGBA pairs, and five RGB/alpha changed counts independently checked again before public curation."
+      },
+      "limit": "Changed isolated synthetic reference: 826-pixel off/on delta is not a repair of the earlier 66,385-pixel failure or proof of a unique lighting cause. Last static-case light snapshot does not establish all-frame lighting ownership or real-shadow support. No actual palace, final landscape, 32 MiB pass or Quest result."
+    },
+    {
+      "id": "E50",
+      "sources": [
+        {
+          "report": "cp54-r213-original-context-bridge-supervisor-review-2026-11-06.json",
+          "sha256": "abe12a18356ea2643720330978d6e7923c93c55216e9685e1e9a18bd213242d3",
+          "recorded_utc": "2026-11-06T10:53:21.878237+00:00"
+        }
+      ],
+      "classification": "source_only_bridge_review_with_unobserved_real_scene_preconditions",
+      "observed": {
+        "scope": "Read-only palace context check proposed; no actual-context trial in this evidence.",
+        "census_limit": "Prototype capacity 16, including two target records; enumeration is not a frustum-only census. Actual palace totals unobserved.",
+        "lighting_limit": "Source configures a shadow-casting sun; frame shadow capability and visible lights remain unobserved.",
+        "memory_limit": "58,982,400-byte attachment scenario is unverified, not measured usage or a lower bound; it cannot prove permanent over-cap or impossibility of verification.",
+        "identity_limit": "Available original scene and generated variant must have distinct baseline labels; do not silently promote one to the other.",
+        "unknown_memory_rows": 10,
+        "product_memory_cap_bytes": 33554432
+      },
+      "limit": "Potential real-scene blockers, not observed actual-scene refusal. Synthetic success does not establish portability to a larger, shadowed palace or historical baseline. No final imagery or performance acceptance."
+    }
+  ]
+}

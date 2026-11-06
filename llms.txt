@@ -12,6 +12,7 @@
 - [Preservation-first design](skills/unity-urp-render-debugging/references/preservation-first-design.md): Additive versus replacement, hidden-terrain failure, full-slice scope and unproven co-depth overlay coverage.
 - [Replay capability checks](skills/unity-urp-render-debugging/references/replay-capability-checks.md): Target identity, positive controls, same-colour writes, batched events and abort-safe cleanup. No native Frame Debugger capability claim.
 - [Terrain geometry and visual quality](skills/unity-urp-render-debugging/references/terrain-and-water.md): Impossible skirts, water visibility, winding and mountain composition.
+- [Lit redraw and fixture isolation](skills/unity-urp-render-debugging/references/lit-redraw-and-fixture-isolation.md): Lit draw context, non-vacuous identity/active arms, scene-mask baseline controls, bounded readbacks and real unload; actual-scene transfer and memory remain open.
 - [GPU and scene lifecycle](skills/unity-urp-render-debugging/references/gpu-and-lifecycle.md): Actual draw-space verification, async ownership and unload orders.
 - [Evidence](evidence/case-study.md): Observed results, rejected approaches and unresolved claims.
 - [1 November update](evidence/update-2026-11-01.md): Validated material correction and first deterministic bake; asset import and final images still pending.
@@ -20,6 +21,7 @@
 - [4 November afternoon update](evidence/update-2026-11-04-afternoon.md): Actual AA4 overlay rejection, frame/dependency fixes and 72-image INVALID art preview; no preservation acceptance.
 - [4 November evening update](evidence/update-2026-11-04-evening.md): Real metric repair, deterministic bakes, limited visual gain and unconfirmed layering hypothesis.
 - [5 November update](evidence/update-2026-11-05.md): Actual texture response, zero-test capture error, fourteen-image strict failure/art rejection, corrected feasibility, verified image reads and workload retrospective. New landform outcome still pending.
+- [6 November update](evidence/update-2026-11-06.md): Far-only one-view zero residuals, rejected copied draw, native synthetic redraw/lifecycle success under a changed isolated reference; UNKNOWN memory and no real-palace acceptance.
 - [Synthetic planning examples](scripts/planning_counterexamples.py): Grid upper bounds, overlapping coverage intervals and perspective texture density; not a scene or GPU certificate.
 - [Synthetic skew-gradient example](scripts/skew_gradient_counterexample.py): Invented affine plane showing why normalized skew axes are not orthogonal.
 - [Official references](docs/api-references.md): Version-specific Unity APIs.

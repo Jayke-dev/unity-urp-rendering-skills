@@ -14,6 +14,7 @@ Optimise for the requested visible result. A passing diagnostic establishes only
 - Effective material tags changing when the rendering pipeline selects a SubShader: [selection-aware-material-guards.md](references/selection-aware-material-guards.md).
 - Landscape gaps, water sightlines, winding or unconvincing mountain forms: [terrain-and-water.md](references/terrain-and-water.md).
 - Imported/live mesh disagreement, static batching, readback ownership or scene exit: [gpu-and-lifecycle.md](references/gpu-and-lifecycle.md).
+- Lit redraw changes pixels with the original material, or synthetic lights/attachments invalidate controls: [lit-redraw-and-fixture-isolation.md](references/lit-redraw-and-fixture-isolation.md). Its successful native controls are isolated-fixture evidence; memory and actual-scene transfer remain unproven.
 - Clone counterfactuals, route-dependent visibility, transition overlays or reconstructed references: [causal-experiments.md](references/causal-experiments.md).
 - Procedural normal/lighting errors on skew coordinates, or textures assigned but not visibly contributing: [normal-metrics-and-material-response.md](references/normal-metrics-and-material-response.md).
 - Authored imports, unequal coordinate frames, copied-scene dependency checks or load/capture clocks: [authored-scene-integration.md](references/authored-scene-integration.md).

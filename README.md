@@ -2,7 +2,7 @@
 
 Practical skills for debugging Unity URP render regressions and adding terrain to an existing VR scene without losing working visuals. Distilled from a preservation-focused memory-palace project in October–November 2026.
 
-**Status:** field-tested diagnostics, bounded repairs and explicit failed approaches. The [5 November update](evidence/update-2026-11-05.md) adds verified worker visual access, a controlled ordinary-RGB texture response, a valid fourteen-image trial that still fails preservation and art, and cheap counterexamples that corrected the next design plan. The broader landform implementation has no validated rendered outcome at this cutoff. Earlier 52 INVALID entries and later 31-pixel strict failure remain; the reconstructed reference is unaccepted. Latest evidence cutoff: 2026-11-05 08:10 UTC. This is not a completed world generator or a proven Quest optimisation package.
+**Status:** field-tested diagnostics, bounded repairs and explicit failed approaches. The [6 November update](evidence/update-2026-11-06.md) adds a one-view far-range preservation milestone and a native synthetic redraw trial with sixteen exact RGBA controls, protected-area preservation during active changes, and genuine scene-unload success. The synthetic reference changed under fixture isolation; its memory remains UNKNOWN and overall verdict INVALID. The actual palace near-landscape, historical identity gaps, full views and device performance remain unresolved. Latest evidence cutoff: 2026-11-06 10:54 UTC. This is not a completed world generator or a proven Quest optimisation package.
 
 ## Start here
 
@@ -21,6 +21,8 @@ Use the skill directly by pointing your agent at its `SKILL.md`. In an agent tha
 | Implementer proposes changes from descriptions alone | Verify actual image content reaches it; compare reference/control/candidate independently | Treating paths, captions or checksums as sight of the result |
 | A capture process exits zero but produces no images | Verify exact test-entry identity, nonzero test count and actual outputs | Rebuilding unchanged assets or reporting no tests as PASS |
 | A geometry plan rules out a simple grid | Check both caps with V below its maximum | Treating a budget ceiling as mandatory allocation |
+| Original-material lit redraw changes the image | Prove actual draw execution and lighting/culling context; test a non-vacuous identity route | Assuming DrawRenderer recreates the original lit pipeline |
+| Synthetic fixture unexpectedly sees a shadow-casting light | Measure visible-light ownership and authorized scene/camera isolation controls | Disabling foreign lights or calling a changed baseline a repair |
 | Adding distant terrain changes foreground pixels | Test one owned rendering variable against an unchanged baseline in the same process | Comparing totals from different process baselines |
 | A sorting mode makes the error nearly disappear | Compare the alternate baseline with the original baseline too | Calling a moved baseline a preservation fix |
 | Imported geometry matches but the live copy differs | Verify actual drawn slice, vertex layout, transform and batching | Assuming the prefab CPU mesh is the final draw geometry |
