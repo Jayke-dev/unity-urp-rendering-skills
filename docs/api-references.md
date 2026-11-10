@@ -28,3 +28,8 @@ Additional references checked 2026-11-06:
 
 - [CommandBuffer.DrawRenderer (6000.3)](https://docs.unity.com/en-us/engine/6000.3/script-reference/unityengine/rendering/commandbuffer/drawrenderer): does not set up lighting-related shader inputs; reusing a lit material is not a complete draw-context setup. The case failure and later renderer-list result are separate observations, not promised API equivalence.
 - [Camera.overrideSceneCullingMask (6000.3)](https://docs.unity.com/en-us/engine/6000.3/script-reference/unityengine/camera/overridescenecullingmask): camera scene-culling selection, with the related Editor scene-mask API. It does not prove isolation of every global lighting input; the native before/after controls and limitations are in the 6 November addendum.
+
+Additional references checked 2026-11-10:
+
+- [Blender 4.1 Python API release notes](https://developer.blender.org/docs/release_notes/4.1/python_api/): documents the read-only loop-normal change and custom-normal setter methods. Check the installed version and actual callable; it does not prove this case’s UV lifetime or storage repair.
+- [Python math.fsum and math.hypot](https://docs.python.org/3/library/math.html): summation and norm APIs with documented numerical behavior. These explain available operations, not the correctness of the private QR implementation or a terrain-feasibility guarantee.

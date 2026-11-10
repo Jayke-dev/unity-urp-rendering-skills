@@ -42,3 +42,7 @@ Use one source owner and serial native execution where the project requires it. 
 ## Audit time without inventing savings
 
 Record per-invocation wall time and per-turn start/end, deduplicate retries and distinguish combined agent-hours, overlapping clock-hours and elapsed calendar time. Resumed CLI counters may be cumulative: verify field semantics before summing. The source audit found 31.84 worker-hours and 42.88 associated Codex hours; that establishes the recorded workload, not that all supervision was waste or that a particular percentage was avoidable. No controlled comparison measured how much faster this revised workflow would be.
+
+## When the next render is blocked by numerical work
+
+Read the actual failure before adding another diagnostic. The later case reached real encoded meshes and native previews, but visual quality remained rejected. Further solver changes cleared arithmetic and allocation blockers without producing a new accepted candidate. An existing crest-gap implication then exposed a necessary contradiction at the selected layout. Prefer that decision-changing finding to another accounting-only retry. See [bounded terrain solvers](bounded-terrain-solvers.md); source tests and internal merit are not visual progress.

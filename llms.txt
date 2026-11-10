@@ -28,3 +28,7 @@
 - [Report checker](scripts/check_capture_report.py): Standard-library evidence checker; not an image analyser.
 - [Synthetic geometry examples](scripts/geometry_counterexamples.py): Executable counterexamples; not a scene certificate.
 - [Synthetic replay examples](scripts/replay_evidence_counterexamples.py): Last colour change versus writer, irrelevant endpoint changes and partial enable failure; not a Unity debugger.
+
+- [10 November update](evidence/update-2026-11-10.md): Actual-palace original-material identity, later native mesh/render failures, QR source repair and selected-layout crest obstruction; no accepted new terrain or Quest proof.
+- [Authored mesh validation](skills/unity-urp-render-debugging/references/authored-mesh-validation.md): Native interchange, UV/normal readbacks, logical/render attribute maps and complete changed-mesh coverage.
+- [Bounded terrain solvers](skills/unity-urp-render-debugging/references/bounded-terrain-solvers.md): Early necessary constraints, exact final gates, honest allocation/work reserves and positive-control regressions.

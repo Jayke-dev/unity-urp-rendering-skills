@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "title": "Unity URP Rendering Skills",
-  "evidence_cutoff_utc": "2026-11-04T18:20:00Z",
+  "evidence_cutoff_utc": "2026-11-10T01:37:19Z",
   "skills": [
     {
       "name": "unity-urp-render-debugging",
@@ -26,12 +26,15 @@
     "No target-device performance claim"
   ],
   "initial_evidence_cutoff_utc": "2026-11-01T02:55:00Z",
-  "evidence_update": "evidence/update-2026-11-04-evening.md",
+  "evidence_update": "evidence/update-2026-11-10.md",
   "evidence_updates": [
     "evidence/update-2026-11-01.md",
     "evidence/update-2026-11-03.md",
     "evidence/update-2026-11-04.md",
     "evidence/update-2026-11-04-afternoon.md",
-    "evidence/update-2026-11-04-evening.md"
+    "evidence/update-2026-11-04-evening.md",
+    "evidence/update-2026-11-05.md",
+    "evidence/update-2026-11-06.md",
+    "evidence/update-2026-11-10.md"
   ]
 }

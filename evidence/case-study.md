@@ -23,3 +23,7 @@ The machine-readable [observations](observations.json) contain curated aggregate
 The grounded far ridge, volcanic landforms and rock/grass texture design aimed to replace pale regular terraces. Source was implemented and checked, but there was no accepted V3 bake/render at the cutoff. The conditional sky-absence plan was reviewed, amended and awaiting specific release; no public claim here promotes it to an implemented fix.
 
 The workflow advice to stop repeating ineffective diagnostics and prioritise a concrete visual intervention is a synthesis of the failed iteration pattern, not a measured reduction in model cost or development time. This repository aims to save rediscovery; it makes no quantified speedup claim.
+
+## Later evidence through 10 November
+
+The [6–10 November addendum](update-2026-11-10.md) supersedes the early actual-scene bridge question with one-view non-vacuous original-material redraw identity. It also records native interchange/bake repairs, three 33-image terrain cohorts that remain art rejected, explicit logical/render attribute maps, and source/numerical repairs that still produced no accepted new terrain. The final selected-layout crest obstruction is a necessary constraint finding, not a global impossibility certificate or rendered repair. Earlier dated observations and failed baselines remain authoritative for their own conditions.

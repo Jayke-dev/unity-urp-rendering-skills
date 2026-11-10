@@ -2,12 +2,14 @@
 
 Practical skills for debugging Unity URP render regressions and adding terrain to an existing VR scene without losing working visuals. Distilled from a preservation-focused memory-palace project in October–November 2026.
 
-**Status:** field-tested diagnostics, bounded repairs and explicit failed approaches. The [6 November update](evidence/update-2026-11-06.md) adds a one-view far-range preservation milestone and a native synthetic redraw trial with sixteen exact RGBA controls, protected-area preservation during active changes, and genuine scene-unload success. The synthetic reference changed under fixture isolation; its memory remains UNKNOWN and overall verdict INVALID. The actual palace near-landscape, historical identity gaps, full views and device performance remain unresolved. Latest evidence cutoff: 2026-11-06 10:54 UTC. This is not a completed world generator or a proven Quest optimisation package.
+**Status:** field-tested diagnostics, bounded repairs and explicit failures. The [10 November update](evidence/update-2026-11-10.md) adds actual-palace one-view redraw identity, native export/bake repairs, three-view terrain comparisons and bounded numerical failures through a necessary layout obstruction. Latest landscape images are from 9 November at about 15:34 UTC and remain art rejected. Later source tests and actual-data solver attempts produced no accepted new terrain. Product memory is UNKNOWN; full-scene and Quest acceptance remain unresolved. Latest evidence cutoff: 2026-11-10 01:37 UTC. This is not a completed world generator or a proven Quest optimisation package.
 
 ## Start here
 
 - **Agents:** read [AGENTS.md](AGENTS.md), then [the skill](skills/unity-urp-render-debugging/SKILL.md). Load only the reference relevant to the problem.
 - **Little visible gain after many passes:** start with [efficient visual iteration](skills/unity-urp-render-debugging/references/efficient-visual-iteration.md): verify the implementer sees actual images, test macro-form early and reuse unchanged evidence. These are retrospective recommendations, with no measured percentage speedup.
+- **Generated mesh or bake failure:** use [authored mesh validation](skills/unity-urp-render-debugging/references/authored-mesh-validation.md).
+- **Repeated numerical/budget stops:** use [bounded terrain solvers](skills/unity-urp-render-debugging/references/bounded-terrain-solvers.md).
 - **People:** start with the decision table below and [the case study](evidence/case-study.md).
 - **Tools:** run the dependency-free [capture-report checker](scripts/check_capture_report.py) on your own aggregate evidence. It checks reported evidence, not images or GPU state.
 - **Discovery:** [llms.txt](llms.txt) and [skills.json](skills.json) identify the entry point. These aid retrieval; publishing them does not guarantee indexing or automatic learning by any model.
@@ -40,6 +42,8 @@ Use the skill directly by pointing your agent at its `SKILL.md`. In an agent tha
 | Strict capture aborts before art can be inspected | Use a separately reviewed preview with no acceptance authority | Reporting collected pictures as preservation PASS |
 | Normal/shading helpers pass but terrain directions look wrong | Test an analytic world-space plane through the full skew-coordinate production path | Treating normalized skew axes as perpendicular |
 | Assigned textures do not read in the final image | Separate asset assignment, key-mask visibility and ordinary-RGB material response | Concluding an occluding layer or working binding from source references alone |
+| Attribute seams break a logical mesh proof | Check an explicit per-corner map and protected payload bits | Calling the raw render-index graph the same manifold disk |
+| Numerical iterations repeatedly stop before a candidate | Include existing crest/visibility consequences in layout selection and retain final verification headroom | Another solver-only repeat at a contradictory placement |
 | Diagnostics keep growing | Name the implementation decision each diagnostic will change | More tests without a concrete product intervention |
 | An inactive water target later hides terrain | Validate co-visibility over route/zone states and refresh the proof inputs | Treating bind-time inactivity as permanent irrelevance |
 | A clone experiment seems to isolate a cause | Compare final bounds and render flags, then account for retained original occlusion | Subtracting clone error counts from replacement counts |

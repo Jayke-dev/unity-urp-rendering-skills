@@ -1,0 +1,675 @@
+{
+  "schema_version": 1,
+  "evidence_cutoff_utc": "2026-11-10T01:37:19Z",
+  "provenance": "Sanitized aggregate curation from reviewed private author reports. Basenames and SHA256 are audit bindings, not a public Unity reproduction. No raw geometry, source implementation, screenshots, local paths, poses, logs or identifiers.",
+  "environment": {
+    "unity": "6000.3.26f1",
+    "urp": "17.3.0",
+    "observed_backend": "Metal",
+    "source_checks": "Python/exact geometry and bounded solver tests; not GPU measurements",
+    "target_device_validation": "NOT ESTABLISHED"
+  },
+  "overall": {
+    "desired_landscape": "UNFINISHED",
+    "latest_actual_landscape_images_utc": "2026-11-09T15:34:00Z",
+    "latest_landscape_art": "REJECTED",
+    "actual_palace_original_material_redraw": "ONE_VIEW_CAPABILITY_PROVEN",
+    "new_accepted_solver_tuple_after_latest_images": false,
+    "product_memory": "UNKNOWN",
+    "full_scene_and_Quest_acceptance": "UNRESOLVED"
+  },
+  "observations": [
+    {
+      "id": "E51",
+      "classification": "reviewed_actual_palace_one_view_nonvacuous_original_material_redraw",
+      "sources": [
+        {
+          "report": "cp54-r231-palace-seven-image-native-supervisor-review-2026-11-06.json",
+          "sha256": "29cbd359b3d6f3c89de1ae4f0f0965dbfb918e0088c98f28522610860e985781"
+        }
+      ],
+      "observed": {
+        "frames": 7,
+        "identity_repeat_and_return_changed_pixels": 0,
+        "positive_control_changed_pixels": 34042,
+        "new_artwork": "OFF",
+        "memory": "UNKNOWN"
+      },
+      "limit": "Original-material route in one actual palace view only; intentionally diagnostic overall test, not full scene, new art, product memory or Quest acceptance."
+    },
+    {
+      "id": "E52",
+      "classification": "observed_case",
+      "sources": [
+        {
+          "report": "cp54-r253-source-export-mismatch-and-ownership-supervisor-review-2026-11-07.json",
+          "sha256": "291e14be4f6a88740ea8baedc65a59e3373c3f5c425394e97a4c4e99dcaaa9c8"
+        },
+        {
+          "report": "cp54-r255-native-reference-export-a2-actual-review-2026-11-07.json",
+          "sha256": "679fa63f4ce80a080164067b54d7325b850f773a452490f60460acdadb5f76cd"
+        },
+        {
+          "report": "r278-exact-export-reuse-independent-review.json",
+          "sha256": "183319cb37709a68bd3781ad3cf9bea9e0ea8ce86705d3de484ee5fec47c51c6"
+        }
+      ],
+      "observed": "Native engine export reproduced the reference bytes after a standalone exporter matched counts but not bytes. A later material-only derivative reused the exact successful geometry with its original generation receipt.",
+      "limit": "One frozen producer/input/binary identity; changed outputs still require bake and capture. No cross-runtime equivalence claim."
+    },
+    {
+      "id": "E53",
+      "classification": "observed_defect_and_reviewed_fix",
+      "sources": [
+        {
+          "report": "astra-floor-r2-actual-bake-supervisor-review.json",
+          "sha256": "28de5c25582dfe1c55b8b40643a8d85f8981b3b013a15ac0d2de9721e77c9423"
+        },
+        {
+          "report": "cp54-r255-native-export-pass-bake-api-hold-supervisor-review-2026-11-07.json",
+          "sha256": "d1a1b01bb8e6035b01b9012512e1d7a2d1b196c6698e9e12a029e71ae03fc877"
+        },
+        {
+          "report": "cp54-r256-blender-capability-and-low-normal-source-review-2026-11-07.json",
+          "sha256": "48bd89662143177e9798cc1f57878b9710e72382f6ae35bf5d626b9fe2d261f5"
+        }
+      ],
+      "observed": "An API guard confused callable Python mesh methods with RNA function entries. A bounded correction removed that preflight blocker.",
+      "limit": "Installed-version capability observation, not a guarantee about every method or later bake stage."
+    },
+    {
+      "id": "E54",
+      "classification": "defensive_practice_with_bounded_native_evidence",
+      "sources": [
+        {
+          "report": "cp54-r256-a3-bake-uv-hold-supervisor-review-2026-11-07.json",
+          "sha256": "b2d26b842ae670210569cbba7746741059e75357c475d49a436492c703b5259f"
+        },
+        {
+          "report": "cp54-r257-blender-uv-lifetime-source-supervisor-review-2026-11-07.json",
+          "sha256": "7ad82bd70efff982ecc112a180eee66d46946281c1f2b89b997a8fb877cacbfc"
+        },
+        {
+          "report": "cp54-r257-a4-authored-bake-actual-supervisor-review-2026-11-07.json",
+          "sha256": "044e98a629b40245b4ad78ae55b192226ef410afeef55818a4233ebd12d394ee"
+        }
+      ],
+      "observed": "The retained-wrapper path failed exact UV readback; reacquiring the layer around attribute edits passed the revised native path.",
+      "limit": "Supports defensive reacquisition and readback, not unique historical attribution to stale handles."
+    },
+    {
+      "id": "E55",
+      "classification": "observed_negative_result",
+      "sources": [
+        {
+          "report": "r261-and-astra-posttrial-final-source-review.json",
+          "sha256": "3cc6a61ee8b1a7995d6b0bff8a95a20f3e6d0ed1b51ffda39a3afff69c4335cf"
+        },
+        {
+          "report": "opus-corrected-normal-angle-bake2-actual-review.json",
+          "sha256": "c656b5a1bb2df4401428450636e7d6dfe001a4474246c003908666f18456d502"
+        },
+        {
+          "report": "opus-free-normal-bake3-actual-supervisor-review.json",
+          "sha256": "b4570a2ca57419c49d43992b9c44702ec2c5c68c0c1d66ad05e507fc4600b745"
+        }
+      ],
+      "observed": "A corrected direction metric retained a real normal discrepancy. A later bounded static LOW representation round-tripped all float32 components exactly, then failed separate projection coverage.",
+      "limit": "Normal metric, representation, coverage and appearance are separate gates; no universal normal-storage repair."
+    },
+    {
+      "id": "E56",
+      "classification": "observed_controlled_visual_negative_result",
+      "sources": [
+        {
+          "report": "astra-floor-r2-synthetic14-independent-pixel-review.json",
+          "sha256": "1310437a35503fb84d193de583c2b9d82b8e8b2acd1a29e5e7ea1dad196cc09b"
+        },
+        {
+          "report": "astra-floor-r2-actual-visual-scorecard-review.json",
+          "sha256": "c24934ec274946d8e86410fbb3091ea36670c380bd0d9f66df6aac258d2018b6"
+        },
+        {
+          "report": "manifest.json",
+          "sha256": "1310437a35503fb84d193de583c2b9d82b8e8b2acd1a29e5e7ea1dad196cc09b"
+        },
+        {
+          "report": "opus-window-r4-actual-visual-scorecard-review.json",
+          "sha256": "4b229c3c72e513205cddc49d9084a165f9b1284635a34c502b26ce22e3fed3ca"
+        },
+        {
+          "report": "manifest.json",
+          "sha256": "83467921da5b3e976f318136138e6c7069f5eec192e4b35aba4124bf9156c91b"
+        },
+        {
+          "report": "r270-independent-visual-review.json",
+          "sha256": "8f8ee38b5f4116d11e9af09e2e7318d79019ae0e78188bf0ebce38c8b7b73756"
+        },
+        {
+          "report": "manifest.json",
+          "sha256": "da7c7718c4f31963ec3f0c129031d29b2100f64a8d71a4f89830153f70332812"
+        },
+        {
+          "report": "r285-actual-cluster-independent-art-review.json",
+          "sha256": "e152ebb0b080420464acf7a6cf14aa220dccbda28800f3d681a10697299b8e23"
+        },
+        {
+          "report": "manifest.json",
+          "sha256": "10f179f3c1b595bb22b6309d01dd5c6380fbab2091c749c6d2d37770238be3ae"
+        },
+        {
+          "report": "r286-actual-palace-independent-art-review.json",
+          "sha256": "4bb375196d1122d8c8a18920c54e879829f6d7d7ffca4a7902c5bad0a0a75fd0"
+        }
+      ],
+      "observed": "Native export/bake and matched fourteen-arm studies passed local technical controls while art remained unaccepted. A six-plant study changed 70 pixels in a 113099-pixel terrain footprint. One actual-palace integration view remained muted.",
+      "limit": "One-view controlled observations, not broad vegetation quality, a unique fog/lighting explanation, full scene or device acceptance."
+    },
+    {
+      "id": "E57",
+      "classification": "source_supported_conditional_explanation_not_validated_repair",
+      "sources": [
+        {
+          "report": "report.json",
+          "sha256": "f50e341cb4d06fe51f7c129fab1d22db36dbd83b2607c60baa3dde8a84e91f9e"
+        },
+        {
+          "report": "manifest.json",
+          "sha256": "c14b9daaf518d20ead68b3500adb1fc5e11d3dc0cc7f4b6819c2b439d3b8c9a2"
+        },
+        {
+          "report": "cp54-sevan-visible-front-support-causal-plan-r279-report.json",
+          "sha256": "c1f205476487d8cbfe54728c4fa3d2edd200f6f25abe5878a35698e5e99dccf1"
+        }
+      ],
+      "observed": "Source review connected high crests, fixed boundary floors and steep returns. A synthetic nonlocal erosion witness changed relief outside the locally masked support.",
+      "limit": "Conditional design evidence and synthetic nonlocality, not a specific production repair or terrain-impossibility proof."
+    },
+    {
+      "id": "E58",
+      "classification": "verified_measurement_rule",
+      "sources": [
+        {
+          "report": "opus-r260-verified-source-run-deltas.json",
+          "sha256": "85ce3e1c48544180c17bcc72385819bf394fec04d7fcf881b2f8ba836ce1539d"
+        },
+        {
+          "report": "opus-r262-verified-source-run-deltas.json",
+          "sha256": "022765fcc777449176d71f8b412e4d66356c21a9f0e65aa8f506a8bcd912fa77"
+        },
+        {
+          "report": "phase2-source-usage-and-waiting.json",
+          "sha256": "f0d1521148f6ee162535e376f5ed9eefc9505dcc9720801fd3b3870738b799bd"
+        },
+        {
+          "report": "pricing-reference.json",
+          "sha256": "e24dc4fd84369d7e73c4a7b5d687f6bd11227d76e0ad5f0de952873c91b77a9e"
+        },
+        {
+          "report": "r269-astra-cost-independent-plan-review.json",
+          "sha256": "c75f2835cca37211f1e4939c3341d6241cbc7d0411810daf6e66d42058f3e1f0"
+        }
+      ],
+      "observed": "Usage accounting distinguished cumulative resumed-session counters, cached input, context/review overhead and serialized waits. Different sampled field sizes and query costs prevented a same-workload model comparison.",
+      "limit": "Recorded usage and provider/API-equivalent estimates do not establish subscription charges or controlled model efficiency."
+    },
+    {
+      "id": "E59",
+      "classification": "OBSERVED_BOUNDED_NATIVE_DIAGNOSTIC_NOT_REPAIR_PASS",
+      "sources": [
+        {
+          "report": "r265-original-bvh-actual-diagnostic-supervisor-review.json",
+          "sha256": "f7cdec8daf4e7d0c98c45aaf5527a671d06f3b60340ad971690d9cf006bf0d90"
+        },
+        {
+          "report": "cp54-sevan-evidence-bound-projection-window-source-proposal-r266-report.json",
+          "sha256": "318b54f64d34ea54efc6c1bcc13a126e11bc7aa3d9860221639c879a88c54659"
+        },
+        {
+          "report": "opus-window-bake4-actual-supervisor-review.json",
+          "sha256": "6cc818a63350210108ceb0fc5705378481840192398d7d01682a5f8cdd11be88"
+        },
+        {
+          "report": "opus-window-r4-actual-visual-scorecard-review.json",
+          "sha256": "4b229c3c72e513205cddc49d9084a165f9b1284635a34c502b26ce22e3fed3ca"
+        },
+        {
+          "report": "r275-safe-own-ray-miss-feedback.json",
+          "sha256": "80b198501194d8f67ed3b0e89f626fd44ded01ed60cf4d99548c5daf6f3db061"
+        },
+        {
+          "report": "r275-actual-export-independent-review.json",
+          "sha256": "953c861a4b2d97683a71d6b2dfd36f2dfa440537af2414676ce367c2096c31bb"
+        },
+        {
+          "report": "r277-opus-actual-bake-independent-review.json",
+          "sha256": "c0f2c551c00e8188e2c0d52d505e4f62c02924e562d8d46d3aab2915dde20af4"
+        }
+      ],
+      "observed": "Faithful replay supported a bounded window repair. Changed geometry later missed 16 of 660900 rays; an owned HIGH correction restored zero misses with the unchanged projection window.",
+      "limit": "Complete changed-mesh coverage remained decisive. No intended-surface uniqueness, continuous-surface coverage or final art acceptance is inferred."
+    },
+    {
+      "id": "E60",
+      "classification": "SOURCE_REPRODUCED_FAILURE_CLASS_ACTUAL_FIRST_FAULT_CAUSE_UNKNOWN",
+      "sources": [
+        {
+          "report": "r268-majorant-rounding-safe-source-witness.json",
+          "sha256": "2fe7f5f00c932cb03fc1737fcb5dc84d0b214267d3e0ef593ff0917c0fe7797c"
+        },
+        {
+          "report": "r269-astra-cost-independent-plan-review.json",
+          "sha256": "c75f2835cca37211f1e4939c3341d6241cbc7d0411810daf6e66d42058f3e1f0"
+        },
+        {
+          "report": "r268-actual-export-hold-review.json",
+          "sha256": "2be8082f80374ed2fdd88a6e59e92c7d770040e036938a6b92f4668f23dd85d8"
+        },
+        {
+          "report": "r270-actual-export-independent-review.json",
+          "sha256": "b208caaa4803b62d6e83dcc1d52ae1df0a4bb73c24ff710cbab28dd00ac3a94e"
+        },
+        {
+          "report": "r270-opus-actual-bake-independent-review.json",
+          "sha256": "8a266d5b73a1d225815de97eaa34fd12b1aca828ebd797f42066f2550ef74ced"
+        },
+        {
+          "report": "r270-independent-visual-review.json",
+          "sha256": "8f8ee38b5f4116d11e9af09e2e7318d79019ae0e78188bf0ebce38c8b7b73756"
+        }
+      ],
+      "observed": "Shipped floating arithmetic reproduced exact-floor violations on a synthetic fixture. The corrected producer later completed engine generation, bake and capture without relaxing acceptance.",
+      "limit": "Missing serialized closure counts prevent attributing the original stopped cell or counting actual corrected values; art still failed."
+    },
+    {
+      "id": "E61",
+      "classification": "ACTUAL_TIMEOUT_WITH_SOURCE_WORKLOAD_CORRECTION_CACHE_UNVALIDATED",
+      "sources": [
+        {
+          "report": "astra-a4-actual-export-timeout-review.json",
+          "sha256": "13b19b96762f457b539ec4cb685112d0568cdd8e1e43f264ed1ee4a90c0a0184"
+        },
+        {
+          "report": "r269-astra-cost-independent-plan-review.json",
+          "sha256": "c75f2835cca37211f1e4939c3341d6241cbc7d0411810daf6e66d42058f3e1f0"
+        },
+        {
+          "report": "report.json",
+          "sha256": "bf084775c474c2a46e2dbca52338ae8244df50ea9bf80052584cc3be4b16250d"
+        },
+        {
+          "report": "astra-a5-actual-export-independent-review.json",
+          "sha256": "c8def8ea9f62424b3ab872b32683bf31c8ec07283d14e0315f4324e1fcbe7f99"
+        },
+        {
+          "report": "astra-a7-actual-export-independent-review.json",
+          "sha256": "355f9a2373efdcc791bb51ef24dab7591e6865a3f34e09d082bb5f01aa3b3d69"
+        },
+        {
+          "report": "astra-a8-main-disposition.json",
+          "sha256": "77c7779beb863bd2a99c4d934128b1ef9a0aaa0a3fd264a212fab3ae5c1639d3"
+        }
+      ],
+      "observed": "A cached full export still timed out at 600 seconds. Later traversal reduced work counts at a matched prefix but still did not complete. A lower-allocation arithmetic prototype was slower in its selected benchmark and was not adopted.",
+      "limit": "Prefix counts, cache hits, separate-process timings and microbenchmarks are not full-runtime or device-speed proofs."
+    },
+    {
+      "id": "E62",
+      "classification": "SOURCE_PROJECTION_ERROR_CORRECTED_NOT_NATIVE_OCCLUSION_CAUSE_PROVEN",
+      "sources": [
+        {
+          "report": "r271-completion-supervisor-final-review.json",
+          "sha256": "cbf3d67689e1b6f1199411a347c3cac5cce116a5551360eaa74d82dd4fcf977a"
+        },
+        {
+          "report": "r272-independent-source-review.json",
+          "sha256": "d8be700af20ca3e9a4d8c28cd46e74c36274a6ba8e144f0493176b6f5bd75b2c"
+        },
+        {
+          "report": "r272-independent-visual-review.json",
+          "sha256": "2511476c311e24f43997d038560c7656743a8ba3601457a303e11005aabcb219"
+        },
+        {
+          "report": "r272-completion-supervisor-final-review.json",
+          "sha256": "8dd359268cf9973d8fbafbbb9d4310b2637118c5c530f47244236d3b68597417"
+        },
+        {
+          "report": "manifest.json",
+          "sha256": "66bafe0c87b80317b4bbafec741d12aae92e884943868ac73dcf248646490091"
+        },
+        {
+          "report": "r278-safe-own-visible-surface-feedback.json",
+          "sha256": "7decd43d33e1f0244448b32783cc45f69f51d2acba1aabada4a9bd4a14fd644d"
+        }
+      ],
+      "observed": "Correct camera-space projection replaced an invalid one-column/one-ray simplification. Matched native RGB later showed modest farther-layer visibility gain. Partial CPU/GPU mapping left 192 of 4096 samples unmatched.",
+      "limit": "Do not infer whole-image causality from the observed subset or treat a diagnostic mapping threshold as an art/preservation waiver."
+    },
+    {
+      "id": "E63",
+      "classification": "SOURCE_INTERFACE_DEFECT_REPRODUCED_BEFORE_NATIVE",
+      "sources": [
+        {
+          "report": "r280-independent-source-interface-blocker.json",
+          "sha256": "41bfa363bef0b3d3fd582e205aaa8b56d2937696b6c766350af0b0cc0d0ba362"
+        },
+        {
+          "report": "r280-independent-source-review.json",
+          "sha256": "d973ebd8f62502f9ca12906c4850fd719e4098786ade070ab04207e1df277b79"
+        },
+        {
+          "report": "manifest.json",
+          "sha256": "78b18c0e5ce7f22f7700783c8ea0a73f7d6ec2e3a9727df0fa8401f06038e992"
+        },
+        {
+          "report": "manifest.json",
+          "sha256": "c7159d51c92f6f5209960e2b590f1e804b9fe0049511bae0820609311d9f60bb"
+        },
+        {
+          "report": "r283-actual-full-surface-independent-art-review.json",
+          "sha256": "baad4c2f972ffded055b8d1d4b501992c037fbfb18798718d4b14f8de11de800"
+        }
+      ],
+      "observed": "A production distance helper saturated at 40 m while proposed rules required farther ranges; an unlimited test double hid the incompatibility. An independent wider adapter preserved the old protected classification. Actual surface trials gave modest colour gain.",
+      "limit": "Test the shipped range contract; source repair and modest colour response do not establish vegetation or completed landscape quality."
+    },
+    {
+      "id": "E64",
+      "classification": "ACTUAL_PATCH_OBSERVATION_NEW_STUDY_BASIS_NOT_RENDER_SUCCESS",
+      "sources": [
+        {
+          "report": "r281-a4-readonly-patch-review-receipt.json",
+          "sha256": "8ff0417c0626695fdf44066d0018c4b9ac0b7a8eaf615cbc939fb41840a1819a"
+        },
+        {
+          "report": "r281-readonly-selector-obstacle-area-observation.json",
+          "sha256": "c2e7cd8222d9aaac1ee84a31b88553e93ea9be9ac38c0e523a282d6a223a9a44"
+        },
+        {
+          "report": "r282-safe-small-surface-study-context.json",
+          "sha256": "ea1d3a45e7e549f3b48452e9a8ec3a8b55d3dd36f1823af3757a68dc64acfade"
+        },
+        {
+          "report": "r284-safe-single-cluster-study-context.json",
+          "sha256": "5a2c860e5dae277314c92e3ed0cdbcde55f953aa4088a3ca93bdf069a692e2e3"
+        },
+        {
+          "report": "manifest.json",
+          "sha256": "78b18c0e5ce7f22f7700783c8ea0a73f7d6ec2e3a9727df0fa8401f06038e992"
+        },
+        {
+          "report": "manifest.json",
+          "sha256": "d7f49fdedb082f81a4c339810f41a1f92e618c71cd65638325332fc825aac5df"
+        },
+        {
+          "report": "r285-actual-cluster-independent-art-review.json",
+          "sha256": "e152ebb0b080420464acf7a6cf14aa220dccbda28800f3d681a10697299b8e23"
+        },
+        {
+          "report": "r286-safe-real-palace-bridge-context.json",
+          "sha256": "f797f25fa290901375425a58c732160a79fe54ba523b70804127fac790927a1e"
+        }
+      ],
+      "observed": "A connected patch below an original planting-study admission floor remained a failed study. A separately labelled smaller surface study and six-plant study passed their own controls; the latter had tiny visible impact.",
+      "limit": "A new study heuristic is not a waiver of original protected-scene acceptance or evidence that the larger planting design works."
+    },
+    {
+      "id": "E65",
+      "classification": "ACTUAL_ORIGINAL_GATE_FAILURE_POSSIBLE_OWNERSHIP_CONTRACT_CONFLICT_NOT_AMENDED",
+      "sources": [
+        {
+          "report": "r289-actual-protection16-independent-pixel-review.json",
+          "sha256": "b8bb0530524a86231783302fc9bc54e3bafc1af1a12a8835886fbb6b1fbed4d6"
+        },
+        {
+          "report": "r289-existing16-gap-strip-independent-review.json",
+          "sha256": "49f1459839cfd5941961a0766b0dc4982fe26cad1e0b28119e9b9210a9da35d9"
+        },
+        {
+          "report": "r290-safe-original-protection-conflict-decision-context.json",
+          "sha256": "f8341cfd2efd0de168c2d584f076c78eccfa5e3025a591b122136c8552964287"
+        }
+      ],
+      "observed": {
+        "original_predicate_failure_pixels": 31849,
+        "separate_lower_gap_failure_columns": 227,
+        "finding": "Candidate own-key confinement did not satisfy the original background-only predicate."
+      },
+      "limit": "Not all failed pixels were attributed to old terrain; no ownership amendment, broad exclusion or threshold waiver follows."
+    },
+    {
+      "id": "E66",
+      "classification": "reviewed_actual_encoded_geometry_and_binary_uv_checks",
+      "sources": [
+        {
+          "report": "a67-actual-source-geometry-completion-review.json",
+          "sha256": "37b1aabc163de8bb395b059ea3b49997a86aaa9f5274691df3af6a241d66472e"
+        },
+        {
+          "report": "a67-main-independent-encoded-geometry-review.json",
+          "sha256": "f11467a2b366e4b10915ca4dec394f2dd95c507bb8d7ed57bf46fdfdac058be6"
+        },
+        {
+          "report": "a67-main-independent-encoded-UV-review.json",
+          "sha256": "0755c2023fac735efdfd70289f61ea422b2877a9c3d4a45a614b0633471c4a16"
+        }
+      ],
+      "observed": {
+        "vertices": 2113,
+        "triangles": 3804,
+        "determinism_passes": 2,
+        "preserved_locked_vertices": 966,
+        "preserved_locked_faces": 1318,
+        "source_constraints": 96034
+      },
+      "limit": "Source/domain, encoded payload and UV evidence, not native appearance, all 107 art acceptance, product memory or Quest."
+    },
+    {
+      "id": "E67",
+      "classification": "reviewed_three_distinct_native_three_view_cohorts_art_rejected",
+      "sources": [
+        {
+          "report": "a68-three-view-safe-completion-findings.json",
+          "sha256": "7923c855dedef35811a54e3f70810685ada508462e04b3a5a867592f2ce52ea3"
+        },
+        {
+          "report": "a85-main-safe-three-view-completion-findings.json",
+          "sha256": "6789f00fda150e3c0ecd8678fa78cac512a1e528865350406586c0a72a7d0ff8"
+        },
+        {
+          "report": "a102-main-safe-three-view-completion-findings.json",
+          "sha256": "8d7475ab3fae370db4345c7ef55ba3faa5fd8289aadf2b700705c71f5df0bf6c"
+        }
+      ],
+      "observed": {
+        "images_per_cohort": 33,
+        "views_per_cohort": 3,
+        "old_control_OFF_residuals_by_cohort": [
+          [
+            0,
+            17,
+            42
+          ],
+          [
+            0,
+            17,
+            47
+          ],
+          [
+            0,
+            15,
+            54
+          ]
+        ],
+        "latest_AB_changed_pixels": [
+          56525,
+          54928,
+          6605
+        ],
+        "latest_AB_outside_union": [
+          0,
+          0,
+          0
+        ],
+        "latest_repeat_and_water_differences": 0,
+        "art": "REJECTED; smoother than earlier sheer diagnostic but broad slopes, weak relief and abrupt end remain",
+        "comparison_basis": "Latest A/B uses earlier geometry control, not immediately preceding cliff diagnostic."
+      },
+      "limit": "Residual series have different frozen candidate/coverage contexts; do not report them as one improving baseline. Full original gates remain unresolved."
+    },
+    {
+      "id": "E68",
+      "classification": "reviewed_attribute_alias_encoding_not_factory_art_acceptance",
+      "sources": [
+        {
+          "report": "a85-main-safe-three-view-completion-findings.json",
+          "sha256": "6789f00fda150e3c0ecd8678fa78cac512a1e528865350406586c0a72a7d0ff8"
+        },
+        {
+          "report": "a101-actual-rejected-fairing-asset-completion-review.json",
+          "sha256": "66414b42efe12aae169f2fe7e010ba4109815498305e71da49abf071e40b7965"
+        }
+      ],
+      "observed": {
+        "logical_vertices": 2113,
+        "triangles": 3804,
+        "first_render_vertices": 2152,
+        "first_attribute_aliases": 39,
+        "later_render_vertices": 2144,
+        "later_attribute_aliases": 31,
+        "frozen_frame_and_encoder_two_pass": "PASS",
+        "later107_and13_shaping_checks": "FAIL_RETAINED"
+      },
+      "limit": "Proof transfers through checked per-primitive quotient mapping, not raw render-index disk topology; exact gates/protected bits not relaxed."
+    },
+    {
+      "id": "E69",
+      "classification": "reviewed_exact_coordinate_boundary_correction",
+      "sources": [
+        {
+          "report": "astra-a131-main-independent-source-review.json",
+          "sha256": "42dc9031928ecc1c2f18e2deae85a5fe44a6a644081dcc3951e746df24d5b08a"
+        }
+      ],
+      "observed": {
+        "finding": "Rationalising represented coordinates in the target construction corrected a mixed float/exact arithmetic obstruction without moving their bits or relaxing a threshold.",
+        "earlier_neighboring_obstruction": "Arithmetic defect; not valid global geometric impossibility."
+      },
+      "limit": "Later real-layout crest implications are separate evidence. Coordinate correction alone did not produce a candidate or image."
+    },
+    {
+      "id": "E70",
+      "classification": "reviewed_retained_digest_schedule_work_reduction",
+      "sources": [
+        {
+          "report": "a137-main-safe-retained-source-schedule-measurement.json",
+          "sha256": "48238dddb7ac0e6741c60c6b26956ac3dcda42cad3e577af8d8de226baec3e04"
+        },
+        {
+          "report": "a138-main-safe-numerical-stop-review.json",
+          "sha256": "6c00de8d541b81bfc96e799fa3d08a8e08628123636d1f7aa38e80c26f815510"
+        }
+      ],
+      "observed": {
+        "baseline_charged_bytes": 414887040,
+        "new_charged_bytes": 137556898,
+        "charged_bytes_saved": 277330142,
+        "canonical_hashes_equal": true,
+        "measurement_rerun": false,
+        "subsequent_actual": "Reached iteration 61 then operation final-headroom hold; no accepted tuple."
+      },
+      "limit": "Applied source matched previously profiled code. Partial digest schedule excludes other costs; charged allocation is not RSS/GPU product memory, complete capacity or a new render."
+    },
+    {
+      "id": "E71",
+      "classification": "reviewed_coupled_solver_and_owned_storage_source_and_actual_failures",
+      "sources": [
+        {
+          "report": "a141-main-safe-two-row-stop-review.json",
+          "sha256": "21c2e2fb8c359f7c91bc5a7a2ab01b496781c54b4d15cfddeae9b58fa142aa85"
+        },
+        {
+          "report": "a141-main-safe-retained-progress-review.json",
+          "sha256": "f5e3b6fa1548a35b262ddab906bd400eb47e51770b1875094411d9151ab19b9b"
+        },
+        {
+          "report": "a143-main-safe-workspace-stop-review.json",
+          "sha256": "5a9a239aafaba33383e6d71cf4ddc9d2c1990abc5dd869c975478f3c3d16b1f9"
+        },
+        {
+          "report": "a143-main-safe-retained-progress-review.json",
+          "sha256": "905bdad900aa0b1ce295e5c623180aa5d6e066bc8019e6800c078d17d2291cd9"
+        }
+      ],
+      "observed": {
+        "first_actual_iterations": 8,
+        "storage_reuse_actual_iterations": 10,
+        "first_true_margin": -5.3443933021962104,
+        "reuse_retained_current_margin": -4.476404355019014,
+        "start_true_margin": -23.219006963626402,
+        "accepted_tuple": false,
+        "actual_stop_axis": "charged-byte final-headroom hold"
+      },
+      "limit": "Separate source identities and actual attempts; internal improvement is not acceptance. The retained current state differs from the logged pre-trial state. No complete resource or image success."
+    },
+    {
+      "id": "E72",
+      "classification": "reviewed_positive_fixture_regression_and_qr_source_repair",
+      "sources": [
+        {
+          "report": "a145-main-qr-arithmetic-policy-review.json",
+          "sha256": "0534dd1eb22725c1decef28ec8eeb79854c6face8a24c89030c29ed33b1208a8"
+        },
+        {
+          "report": "astra-a147-main-independent-source-review.json",
+          "sha256": "bcf22d4b0a139bd30cb82df6e6d6b1290cae851dc4bdf5897e233fee41f841b1"
+        },
+        {
+          "report": "a148-main-safe-qr-stop-review.json",
+          "sha256": "c70322a0b92c0e9016ba26186fb09624292602cf38d6c78f1ebd463e49a44aa8"
+        }
+      ],
+      "observed": {
+        "original_positive_fixture": "PASS restored with original inputs and expectation",
+        "source_tests": 60,
+        "actual_QR": {
+          "accepted_steps": 6,
+          "rejected_trials": 1,
+          "iterations_reached": 8,
+          "operation_headroom_stop": true,
+          "operations_used": 34778221,
+          "charged_bytes": 816955006,
+          "minimum_margin": -2.8648481995441104,
+          "accepted_tuple": false
+        }
+      },
+      "limit": "Reviewed arithmetic repair and independent source tests do not establish actual feasibility. Original exact gates and final reserves remain; no new asset or render."
+    },
+    {
+      "id": "E73",
+      "classification": "reviewed_retained_layout_necessary_crest_obstruction",
+      "sources": [
+        {
+          "report": "a148-main-safe-crest-bound-observation.json",
+          "sha256": "476445f1c3caee1140fb5990031e1cf89ffa5bab2356264043894e5ae7fdd05c"
+        },
+        {
+          "report": "a148-main-safe-static-row-observation.json",
+          "sha256": "bc468c2934222af5226536b632e182fdb5d0bae49806310055729166022ab9bf"
+        },
+        {
+          "report": "a148-main-shared-star-direction-review.json",
+          "sha256": "810498a79d3bdeee64915e60775abb3489a9e68e40e893876fbdefe58ad7753e"
+        }
+      ],
+      "observed": {
+        "existing_crest_gap_m": 16,
+        "required_valley_segments_empty_at_selected_layout": 2,
+        "dropped_potentially_movable_dependent_rows": 133,
+        "neighboring_segment_still_empty_in_weaker_static_relaxation": true,
+        "new_candidates": 0
+      },
+      "limit": "Empty necessary regions contradict this selected placement. Uniform movement-domain obstruction requires source invariance of rows/supports/bounds/exclusions. Not global terrain impossibility or a validated layout repair."
+    }
+  ]
+}

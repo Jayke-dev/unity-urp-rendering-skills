@@ -14,7 +14,7 @@ The earlier whole-mesh copy changed 32 protected pixels even with exact-order li
 
 Separately, a direct original-material lit redraw changed 66,385 pixels in a synthetic fixture. Unity documents that `CommandBuffer.DrawRenderer` does not set up lighting-related shader inputs; lit results can therefore be undefined. Do not infer that reusing a material also recreates its original pipeline context. Inspect the pinned renderer's culling, sorting, per-object data, shader-pass selection, probes, lightmaps, shadow state and effective camera resources.
 
-A renderer list built from the relevant frame's culling/drawing/filtering context is an approach to test, not a guarantee. In the source case it eventually produced exact original and owned-material redraws in an isolated fixture, including the statically batched case. Real shadowed-scene identity remains unproven. Do not bypass light/shadow guards merely to reach the draw.
+A renderer list built from the relevant frame's culling/drawing/filtering context is an approach to test, not a guarantee. In the source case it eventually produced exact original and owned-material redraws in an isolated fixture, including the statically batched case. At that early cutoff real-scene transfer was unproven; the later one-view result below extends it. Do not bypass light/shadow guards merely to reach the draw.
 
 ## A synthetic scene can inherit unintended context
 
@@ -41,3 +41,7 @@ Before transplanting this fixture result, establish the actual target scene's pr
 Keep resource unknowns sticky. Count known owned allocations under their declared rules; net memory deltas can hide gross allocations. Separate existing capture-buffer exclusions using exact disjoint measurement segments, not arbitrary reclassification. A charged estimate is still an estimate. Preserve the product budget and report UNKNOWN until supported measurements or bounds establish it.
 
 Read only the corresponding dated case evidence when needed; no private renderer implementation, scene or native raw data is supplied by this repository.
+
+## Later actual-palace result, with the same scope discipline
+
+The late 6 November seven-frame run established one-view actual-palace original-material redraw identity: repeats/redraw/returns were byte-exact, while a positive control changed 34,042 pixels. This completes that specific bridge and should not be repeatedly re-proved without a relevant new failure. New landscape artwork was OFF. Full original scene gates, product memory and Quest acceptance remain unresolved. The [10 November addendum](../../../evidence/update-2026-11-10.md) preserves both this success and the older distinct failures.
